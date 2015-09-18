@@ -40,7 +40,7 @@ ZIMAGE_DIR="$KERNEL_DIR/arch/arm64/boot"
 # Functions
 function clean_all {
 		ccache -c -C
-		rm -rf $MODULES_DIR/*
+		rm -rf $MODULES_DIR/*.ko
 		cd $REPACK_DIR
 		rm -rf $KERNEL
 		rm -rf $DTBIMAGE
