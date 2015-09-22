@@ -1,0 +1,1639 @@
+Project name: AK KERNEL
+ anarkia1976 - Added ak-changelog generator
+ anarkia1976 - Kernel Version: AK.003.OPO2.CAF
+ Hieu Nguyen - OnePlus: update to OnePlus2_14_A.08_150919 kernel source
+ anarkia1976 - arch: arm64: msm8994: enable splash logo at boot
+ myfluxi - block: deadline: Optimize for non-rotational
+ anarkia1976 - arch: arm64: msm8994: remove bcl-hotplug
+ anarkia1976 - Kernel Version: AK.002.OPO2.CAF
+ anarkia1976 - ak-oneplus2-build: remove only modules lib
+ anarkia1976 - ak_OnePlus2_defconfig: set default WESTWOOD and enable all schedulers
+ Willi Ye - makefile: Add --strip-debug flag
+ Willi Ye - qcacld-2.0: Merge wifi drivers from CAF LA.BF64.1.2.1.c2.1
+ Willi Ye - qcacld-2.0: import wifi drivers from CAF LA.BF64.1.1.c3.1
+ anarkia1976 - ak_OnePlus2_defconfig: optimizations
+ anarkia1976 - Added ak-oneplus2-build && ak_OnePlus2_defconfig
+ Willi Ye - qpnp-haptic: Add sysfs interface to control intensity
+ Riley Andrews - android: drivers: workaround debugfs race in binder
+ Willi Ye - arm64: boot: dts: keep our dts files up to date
+ Steve Kondik - misc: Fix Kconfig warnings
+ Steve Kondik - arm64: Fix the ARM userspace build
+ Steve Kondik - arch: Unbreak mrproper/clean
+ Greg Hackmann - arch: arm64: force -fno-pic
+ Willi Ye - camera_v2/sensor/vl6180/inc/vl6180x_i2c.h: fix compiling for stmvl6180.h - No such file or director"
+ Hieu Nguyen - OnePlus: bring in 14049 A2005/A2003/A2001 OnePlus 2 kernel source
+ Senthil kumar Rajagopal - msm: camera: isp: Address corner cases in camera2 buffer handling
+ Senthil kumar Rajagopal - msm: camera: isp: Return error if scheduling is delayed
+ Senthil Kumar Rajagopal - msm:isp: handle drop frame if the pattern is valid
+ Senthil Kumar Rajagopal - msm: camera: isp: Fix for Frame drop
+ Konstantin Motov - msm: camera: add support for frame drop
+ Viswanadha Raju Thotakura - msm: camera: Fix to release cci clocks
+ Pavan Anamula - ARM: dts: msm: Modify SDHC2 clock rate for msm8939.
+ Xu Han - msm: camera: turn off logging by default for msm_flash
+ Dan Sneddon - devfreq: devfreq_spdm: Enhance debugfs entries
+ Viswanadha Raju Thotakura - msm: camera: Fix state machine for camera sensor subdevs
+ Mohammed Khajapasha - lpm: Free the allocated resource to avoid memory leak
+ Krishna Chaitanya Parimi - msm: mdss: cancel AD calc work and destroy workqueue at power off
+ Hemant Kumar - usb: ehci-msm2: Fix HUB resume issue upon runtime resume
+ Zhen Kong - crypto: msm: qcrypto: fix crash in _qcrypto_tfm_complete
+ Subbaraman Narayanamurthy - ARM: dts: msm: update voltage adjustments for APC1 CPR regulator on msm8994
+ Subbaraman Narayanamurthy - ARM: dts: msm: specify minimum quotient differences for APC0 CPR on msm8992
+ Subbaraman Narayanamurthy - regulator: cpr-regulator: improve handling of incorrect target quotients
+ Harsh Shah - Arch: arm: dts: Match ds settings for vfe0 and vfe1
+ Alex Sarraf - input: keyboard: qpnp-keypad: register private data in SPMI dev
+ Shiju Mathew - ARM: dts: msm: Add battery sensor into MSM8994 thermal sensor info node
+ Subbaraman Narayanamurthy - ARM: dts: msm: fix the APC0 nominal initial voltage adjustments on msm8994
+ Jie Cheng - power: qpnp-fg: reduce the probe time of driver
+ Xiaozhe Shi - power: qpnp-fg: do not dump sram without debug mask
+ Ingrid Gallardo - msm: mdss: fix race condition between two rotators and overlay off
+ Naveen Kaje - msm_serial_hs: ensure system stays awake when client is active
+ Jeevan Shriram - msm: mdss: try recovering from pingpong timeout without panic
+ Aravind Venkateswaran - msm: mdss: restore backlight level when recovering from ESD attack
+ Jeevan Shriram - msm: mdss: dsi: Add dsi event to reset panel write pointer
+ Jeevan Shriram - msm: mdss: reset MDP ctl path for pingpong timeout recovery
+ Jeevan Shriram - msm: mdss: reset panel when wait4pingpong timeout is received
+ Patrick Daly - soc: qcom: scm-mpu: Fix bug in unlock code path
+ Krishna Chaitanya Parimi - msm: mdss: do not assign ad_calc_bl if AD offsets are absent
+ Jeevan Shriram - msm: mdss: correct second control tearcheck enable base offset
+ Omprakash Dhyade - soc: qcom: msm_perf: Add sysfs node to report cpu hotplug events
+ Rajakumar Govindaram - msm: camera2: cpp: Support VIDIOC_MSM_CPP_POP_STREAM_BUFFER compat mode
+ Rajakumar Govindaram - msm: camera2: cpp: Reset payload for VIDIOC_MSM_CPP_GET_EVENTPAYLOAD
+ Ramakrishnan Ganesh - Revert "sched: Use only partial wait time as task demand"
+ Rajakumar Govindaram - msm: camera2: cpp: Set correct levels for printk messages
+ Patrick Daly - soc: qcom: scm-mpu: Add an API to unlock the kernel text region
+ Mayank Rana - dwc3: gadget: Initialized USB TRBs pool memory with zero
+ Mayank Rana - USB: gadget: u_bam: Fix recursive spinlock up issue
+ David Collins - regulator: cpr-regulator: fix race condition in CPU hotplug callback
+ Syed Rameez Mustafa - sched: Use only partial wait time as task demand
+ Jeevan Shriram - msm: mdss: suppress dsi fifo errors during refresh rate update
+ Junjie Wu - ARM: dts: msm: Update minbw table for MSM8992 to improve performance
+ Naveen Ramaraj - msm: mdss: Use clock safe wrapper for reading DSI hw version
+ Padmanabhan Komanduru - msm: mdss: change the print level to debug for dynamic fps write
+ Junjie Wu - cpufreq: interactive: Skip delay in frequency changes due to migration
+ Gilad Broner - media: dvb: fix sdmx metadata buffer release
+ Junjie Wu - cpufreq: interactive: Reschedule timer if min_freq is reduced
+ Rajesh Bondugula - msm: camera: sensor: Fix the improper pointer dereference
+ Tapas Kumar Kundu - soc: qcom: msm_perf: Add support for enter/exit cycle for io detection
+ Tapas Kumar Kundu - soc: qcom: msm_perf: Add support for multi_cycle entry/exit nodes
+ Senthil kumar Rajagopal - msm: camera: isp: camif error fix for isp46
+ Harout Hedeshian - net: udp: Adjust UDP socket state for encapsulation sockets
+ Harsh Shah - msm: camera: isp: Avoid blocking for halt in mismatch recovery
+ Konstantin Khlebnikov - proc/pagemap: walk page tables under pte lock
+ Eugene Yasman - ASoC: msm: LiQUID: Jump to the section which free the GPIO properly
+ Phani Kumar Uppalapati - ASoC: msm: qdsp6v2: Correct buffer size alignment while memory map
+ Rajkumar Raghupathy - soc: qcom: pil-msa: Free mba region if metadata authentication fails
+ Rajkumar Raghupathy - soc: qcom: pil-msa: Notify MBA about PIL loading failure
+ Harsh Shah - msm: camera: isp: Update the halt api to block selectively
+ Sreesudhan Ramakrish Ramkumar - msm: camera: isp: Halt axi on IOMMU page fault
+ David S. Miller - ipv4: Missing sk_nulls_node_init() in ping_unhash().
+ Adrian Salido-Moreno - msm: mdss: pipe: fix solid fill image programming
+ Ashray Kulkarni - msm: vidc: remove adding of extra input buffers for encoder
+ Xiaozhe Shi - power: qpnp-smbcharger: disable charging for unknown batteries
+ Anirudh Ghayal - power: qpnp-smbcharger: Update charger configuration based on battery type
+ Xiaozhe Shi - power: qpnp-smbcharger: handle very weak chargers
+ Xiaozhe Shi - power: qpnp-smbcharger: use source detect for usb detection
+ Xiaozhe Shi - power: qpnp-smbcharger: fix race condition in APSD rerun
+ Subbaraman Narayanamurthy - power: qpnp-smbcharger: handle the removal of OCP
+ Abhijeet Dharmapurikar - power: qpnp-smbcharger: fix usb type detection
+ Abhijeet Dharmapurikar - power: smb135x-charger: fix USB type detection
+ Hemant Kumar - dwc3-msm: Remove pull downs from D+ and D- lines upon cable connect
+ Abhijeet Dharmapurikar - power: power-supply: add property POWER_SUPPLY_PROP_ALLOW_DETECTION
+ Abhijeet Dharmapurikar - power: qpnp-smbcharger: introduce locking around USB status updates
+ Zhen Kong - ARM: dts: msm: Set flag to manage clks during suspend for msm8992
+ Rajakumar Govindaram - msm: camera2: cpp: Support reschedule for timeout frame
+ Rajakumar Govindaram - msm: camera2: cpp: Avoid stream count increment during delete buffer
+ Viswanadha Raju Thotakura - ARM: dts: msm: Add support for new camera eeprom on 8994
+ William Clark - msm: crypto: Add CONFIG_FIPS_USE_RECOMPILE for FIPS enablement
+ Viswanadha Raju Thotakura - ARM: dts: msm: Add support for new camera eeprom on 8992
+ Ingrid Gallardo - msm: mdss: xlog: fix issue preventing dump address to be stored
+ Ingrid Gallardo - msm: mdss: xlog: add support to force registers dump during fatal errors
+ Siddhartha Agrawal - msm: mdss: xlog: add support to dump MDP debug bus
+ Tapas Kumar Kundu - soc: qcom: msm_perf: Add timers to exit SINGLE mode
+ Subbaraman Narayanamurthy - power: qpnp-smbcharger: add support to enable AICL rerun
+ Ashray Kulkarni - Revert "msm: vidc: Increase power collapse timeout value"
+ Jeevan Shriram - ARM: dts: msm: reduce control and panel power on delays
+ Jie Cheng - msm: mdss: Add check for enabled regulators to avoid delays
+ Jeevan Shriram - msm: mdss: wait for vsync before updating fps dynamically
+ Harsh Shah - msm: camera: isp: Reset frame id on PIX before reset framedrop
+ Gilad Broner - media: dvb: mpq-sdmx: increase number of physical chunks
+ David Collins - ARM: dts: msm: limit minimum VDD_CX active set request to SVS for msm8992
+ Olav Haugan - sched/fair: Add irq load awareness to the tick CPU selection logic
+ David Collins - ARM: dts: msm: limit minimum VDD_CX active set request to SVS for msm8994
+ Aravind Venkateswaran - msm: mdss: dsi: fix handling of ulps_suspend feature flag
+ Phani Kumar Uppalapati - ARM: dts: msm: Add gpio 72 configuration for msm8992
+ Rajakumar Govindaram - msm: cpp: Support CDS handling in queue buffer path
+ Senthil Kumar Rajagopal - msm: isp: CAMIF subsample skip patterns
+ Ram Chandrasekar - msm: thermal: Retry hotplug when exiting from suspend
+ Viswanadha Raju Thotakura - msm: camera: preserve eeprom data
+ Kuogee Hsieh - msm: mdss: release mdp_busy flag at isr
+ Harsh Shah - msm: camera: isp: Resolve timing error in request frame
+ Naveen Kaje - slim-msm: send port disconnect messages over slimbus
+ Sagar Dharia - slimbus: Protect transaction-id assignment
+ Ram Chandrasekar - power: bcl_peripheral: Update the interrupt disable
+ Ram Chandrasekar - leds: led-class: Retain the latest user brightness request
+ Pushkar Joshi - clk: qcom: clock-local2: Add clk_set_parent for RCGs
+ Pushkar Joshi - clk: qcom: clock-mmss-8992: Support multiple parents for byte/pixel clocks
+ Pushkar Joshi - clk: qcom: clock-mmss-8994: Support multiple parents for byte/pixel clocks
+ Nagesh Subba Reddy - msm: camera: isp: Error handling for cfg stream failure
+ Viswanadha Raju Thotakura - msm: camera: Update the CCI timeout.
+ Subbaraman Narayanamurthy - msm: qpnp-power-on: change the usage of mutex while setting debounce delay
+ Krishna Chaitanya Parimi - msm: mdss: alter linear_map to incorporate rounding for AD
+ Rohit Vaswani - Makefile: Enable ld fix for cortex-a53 errata 843419
+ Vikram Mulukutla - clk: qcom: clock-pll: Panic if a variable rate PLL fails to lock
+ Praneeth Paladugu - msm: vidc: Defer suspend till Venus goes to power collapse
+ Shubhraprakash Das - msm: kgsl: Do not get active count on coresight start/stop
+ AnilKumar Chimata - ARM: dts: msm: Set flag to manage clks during suspend for msm8994
+ Dov Levenglick - mmc: sdhci-msm: Implement reset workaround and enable it
+ Dov Levenglick - mmc: sdhci: Add new host->op and quirk to apply reset workaround
+ Deepak Kaushal - msm: camera: Validate size param before allocating memory
+ Saravana Kannan - ARM: dts: msm: Update minbw table for MSM8994 v2 to improve performance
+ Gilad Broner - media: dvb: protect against invalid filter dereference
+ Ujwal Patel - msm: mdss: wake up threads relying on shutdown notice
+ Ujwal Patel - msm: mdss: handle timeouts from pan_idle and wait_for_kickoff
+ Ingrid Gallardo - msm: mdss: fix underruns during hflip and downscaling scenarios
+ Petar Sivenov - msm: camera: isp: protect driver from using invalid bufq
+ Senthil kumar Rajagopal - msm: camera: isp: Frameid mismatch recovery
+ Sunid Wilson - msm: jpeg: Make _msm_jpeg_open and _msm_jpeg_release atomic
+ Jeevan Shriram - msm: mdss: change calculation reference to default frame rate
+ Fred Oh - ASoC: msm: qdsp6v2: add adm status variable
+ Ilia Lin - ARM: dts: msm: Fix MI2S pin control names on DB8094
+ Casey Piper - msm: mdss: update polarity based on HDMI resolution
+ Jeevan Shriram - ARM: dts: msm: remove incorrect configuration of boost gpio
+ David Collins - ARM: dts: msm: use APC0 SVS CPR quotient fuse for SVS2 on msm8994
+ Fred Oh - ASoC: msm: qdsp6v2: remove flush wait queue
+ Benet Clark - msm: mdss: Add separate backlight notify update for AD attenuation
+ Jeykumar Sankaran - msm: mdss: Return EBADSLT on pipe failures due to priority
+ Adrian Salido-Moreno - mdss: rotator: increase rotator commit count before scheduling work
+ Krishna Chaitanya Parimi - msm: mdss: do not wait for histogram kick start for hist v2
+ Adrian Salido-Moreno - mdss: fb: wait for idle only on last fb release
+ Jeevan Shriram - clk: mdss: initialize reference clock during handoff
+ Sagar Dharia - slimbus: Optimize transaction handling in the framework
+ Praneeth Paladugu - msm: vidc: Process PC_PREP_DONE inside msgq read loop
+ Praneeth Paladugu - msm: vidc: Protect suspend operation with core lock
+ Tirupathi Reddy - regulator: cpr-regulator: Fix CPR initialization code for invalid quotients
+ Shubhraprakash Das - msm: kgsl: Ratelimit fence error messages
+ Rajeev Kulkarni - msm: kgsl: Protect additional registers which cause XPU violation
+ Shubhraprakash Das - msm: kgsl: Fix fence debug message lock sequence
+ Shubhraprakash Das - msm: kgsl: Snapshot fix for A4XX
+ Subbaraman Narayanamurthy - power: qpnp-fg: enable vbatt_low interrupt selectively
+ Jeevan Shriram - msm: mdss: enable tearcheck after panel on for synchronization
+ Skylar Chang - msm: ipa: fix the ipa inactivity timer issue
+ Skylar Chang - msm: ipa: fix lan-pipe socket buf memory accounting
+ Praneeth Paladugu - msm: vidc: Limit the session QP for HEVC encoder
+ Xiaozhe Shi - power: qpnp-smbcharger: reschedule vfloat work upon failure
+ Xiaozhe Shi - power: qpnp-smbcharger: limit enabling parallel charger frequently
+ Mihir Shete - cfg80211: add space after the b/w in db.txt
+ Mayank Rana - usb: f_mass_storage: Add WARN_ON() when other then SIGUSR1 signal received
+ Sagar Gore - msm: camera: isp: Use disable tasklet instead of kill
+ Rama Vaddula - msm: kgsl: Fix double put for context in an error case
+ Gilad Broner - scsi: ufs: fix probe failure masked by crypto engine reset
+ Jack Pham - ARM: dts: msm: Add VDDCX supply to HSPHY for MSM8994 and 8992
+ Jack Pham - usb: phy: hsusb: Add optional VDDCX regulator
+ Zhen Kong - qseecom: change MAX_APP_NAME_SIZE value
+ Liam Mark - arm64: dma-mapping: make alloc_noncoherent more robust
+ Petar Sivenov - msm:camera:isp: vfe num input validation during reset
+ Sivan Reinstein - msm: ipa: stop IPA QMI workqueues when SSR is detected
+ Ankit Gupta - qcom-sps-dma: fix a memory leak and improve performance
+ Casey Piper - msm: mdss: read from HDMI CEC register only if CEC enabled
+ Xiaozhe Shi - power: qpnp-fg: fix constant fuel gauge restarts at boot
+ Yue Ma - cnss: Increase maximum firmware size for secure firmware feature
+ Neeti Desai - ARM: dts: msm: Update memory map information for msm8992
+ Sreelakshmi Gownipalli - diag: Update some MSG SSIDs levels in msg masks table 6
+ Neeti Desai - ARM: dts: msm: Update memory map information for msm8994
+ Phani Kumar Uppalapati - ASoC: wcd9330: Remove unnecessary check for BG_CLK lock
+ Bhalchandra Gajare - ASoC: wcd_cpe_core: Avoid CPE bootup if clock enable failed
+ Fred Oh - ASoC: msm: qdsp6v2: validate audio client in callback
+ Ashray Kulkarni - msm: vidc : report PC_PREP failure as SYS_ERROR
+ Ashray Kulkarni - msm: vidc: aggregate OCMEM bandwidth for low-power mode
+ Junjie Wu - cpufreq: interactive: Ramp up directly if cpu_load exceeds 100
+ Mayank Rana - usb: gadget: rndis: set max transfer size to host as 9KB
+ Mayank Rana - ARM: dts: msm: Disable U1U2 low power mode on 8994 and 8992
+ Subbaraman Narayanamurthy - power: qpnp-smbcharger: allow configuring FCC irrespective of AICL results
+ Shiju Mathew - ARM: dts: msm: Update KTM emergency frequency mitigation for MSM8994
+ Suman Tatiraju - msm: kgsl: Disable POPP feature
+ Krishnankutty Kolathappilly - msm: cpp: Add missing error handling checks
+ Veera Sundaram Sankaran - msm: mdss: Fix src_split mixer settings for 4k HDMI usecase
+ Xiaozhe Shi - power: qpnp-fg: report internal soc calculation variables
+ William Clark - qseecom: Fix NULL pointer dereference
+ Fred Oh - avtimer: validate input parameter before using it
+ Yue Ma - cnss: Fix potential crash caused by dereferencing a NULL pointer
+ Laura Abbott - mm/page_alloc: Call kernel_map_pages in unset_migrateype_isolate
+ Hariram Purushothaman - msm: camera: Adopt camera buff mgrs to use VB2 MAX buffs
+ Karthik Parsha - ARM: dts: msm: Use mock retention sequence for A57 CPUs on MSM8992
+ Jie Cheng - power: smb1351-charger: add support for configuring float voltage
+ Jie Cheng - power: smb1351-charger: Read the IRQ status instead of trigger bits
+ Praneeth Paladugu - msm: vidc: Change packet memory to static allocation mode
+ Praneeth Paladugu - msm: vidc: Initialize the completion before sending the command
+ Vasko Kalanoski - msm: camera: sensor: bugfix for non-ZSL black capture mt9m114
+ Veera Sundaram Sankaran - msm: mdss: Fix possible NULL dereference
+ Sarangdhar Joshi - coresight: add tpda enable validation checks in sysfs show functions
+ Helen Zeng - ASoC: msm: Fix NULL pointer dereference
+ Suman Tatiraju - ARM: dts: msm: Support 180Mhz GPU frequency for all 8994v2 chips
+ Suman Tatiraju - Arm: dts: msm: Add support for 630Mhz GPU frequency
+ Veera Sundaram Sankaran - ARM: dts: msm: add sharp 1080p cmd panel for msm8994/msm8992 mtp
+ Senthil Kumar Rajagopal - msm: camera: Release spinlock in error case
+ Senthil Kumar Rajagopal - msm: camera: isp: iommu page fault handling update
+ Junjie Wu - cpufreq: interactive: Implement cluster-based min_sample_time
+ Will Deacon - arm64: errata: add workaround for cortex-a53 erratum #845719
+ Pushkar Joshi - clk: qcom: clock-mmss-8992: Add additonal mclk0 frequency
+ Lianwei Wang - cpufreq: interactive: only boost tunable affected cpus
+ Veera Sundaram Sankaran - ARM: dts: msm: Add jdi 1080p panel support on msm8992
+ Subbaraman Narayanamurthy - ARM: dts: msm: fix SVS quotient adjustment for APC1 regulator on msm8992
+ Prasad Sodagudi - ion: validate ion client in ion_debug_client_show() and extract data
+ Ujwal Patel - msm: mdss: reset ctl path if rotator wait4comp returns error
+ Subbaraman Narayanamurthy - power: qpnp-fg: improve ESR detection during cold battery condition
+ Xiaozhe Shi - power_supply: add CHARGE_NOW_RAW, CHARGE_NOW_ERROR, and CAPACITY_RAW
+ Chiou-Hao Hsu - Revert "msm: camera: Unlock the VFE kernel driver while waiting"
+ Joonwoo Park - sched: fix race conditions where HMP tunables change
+ Joonwoo Park - sched: check HMP scheduler tunables validity
+ Chiou-Hao Hsu - Revert "defconfig:msm: FIPS feature enablement"
+ Trilok Soni - arm64: defconfig: Disable wakeup sources garbage collector for userspace
+ Rohit Gupta - cpufreq: Save state for entire cluster when the last CPU goes offline
+ Veera Sundaram Sankaran - msm: mdss: fix possible NULL pointer dereferences
+ Adrian Salido-Moreno - mdss: dsi: fix potential race conditions in mdp busy wait
+ Patrick Daly - netfilter: xt_HARDIDLETIMER: Fix use after free condition
+ Suman Tatiraju - msm: kgsl: Fix INIT to ACTIVE state transition
+ Dhaval Patel - msm: mdss: fix ret value during error case
+ Xiaozhe Shi - power: qpnp-smbcharger: always set high current when setting ICL
+ Gilad Broner - scsi: ufs: implement scsi host timeout handler
+ Ujwal Patel - msm: mdss: modify bus bw vote lock and count strategy
+ Mayank Rana - Revert "ARM: dts: msm: Increase Data and Desc FIFO size of USB BAM's Pipes"
+ Joonwoo Park - timer: reduce cache bouncing of deferral timer wheel
+ Ritesh Harjani - mmc: core: Fix mmc clk scale down during writes.
+ Pushkar Joshi - clk: qcom: clock-pll: Increase delay for "transient" PLL locks
+ Neha Atri - iommu: Fix __msm_map_iommu_common()
+ Ram Chandrasekar - power: bcl: Fetch the latest SoC value after BCL enable
+ Zhen Kong - defconfig:msm: FIPS feature enablement
+ Jack Pham - usb: gadget: qti: Don't call rmnet_disconnect from ctrl_disconnect
+ Jack Pham - usb: dwc3: Ignore multiple U3/L2 suspend events
+ Ajay Singh Parmar - msm: mdss: hdmi: Handle fast HPD interrupts
+ Subbaraman Narayanamurthy - power: qpnp-fg: fix releasing access while updating SRAM data
+ Matt Wagantall - defconfig: msm: Enable CONFIG_PANIC_ON_RECURSIVE_FAULT
+ Matt Wagantall - exit: Add PANIC_ON_RECURSIVE_FAULT Kconfig option
+ Walter Yang - ASoC: wcd: correct the swap plug type detection
+ Rohit Vaswani - ARM: dts: msm: Enable Single Bit cache error interrupt and polling for 8992
+ Ravi Gummadidala - ARM: dts: msm: disable ipa node in APQ8094
+ Aravind Kumar - ASoC: qdsp6v2: handle ion alloc failure correctly
+ Aravind Kumar - ASoC: msm: qdsp6v2: check ion alloc return value
+ Chun Zhang - led: leds-qpnp-flash: set OTG pulse skip bit around LED usage
+ Subbaraman Narayanamurthy - power: qpnp-smbcharger: add support for configuring OTG pulse skip
+ Subbaraman Narayanamurthy - power: power_supply: add POWER_SUPPLY_PROP_FLASH_ACTIVE property
+ Xiaozhe Shi - power: qpnp-smbcharger: qpnp-fg: lower resume soc upon termination
+ Xiaozhe Shi - usb: dwc3: make bms power supply a supplicant of usb
+ Xiaozhe Shi - power_supply: add local extension POWER_SUPPLY_PROP_CHARGE_DONE
+ Manikanta Sivapala - msm: vidc: Convert realloc to resource managed malloc to avoid memleak.
+ Ravi Kumar Alamanda - ASoC: msm: qdsp6v2: Restrict capture path to LL mode
+ Catalin Marinas - arm64: Use the reserved TTBR0 if context switching to the init_mm
+ Haynes Mathew George - ASoC: msm: qdsp6v2: Fix timestamp query during gapless transition
+ Ankit Gupta - ARM: dts: msm: correct blsp number for i2c for msm8994
+ Senthil kumar Rajagopal - msm: camera: isp: Fix for CAMIF error
+ Krishnankutty Kolathappilly - msm: cpp: Add error handling for invalid ioctl pointer
+ Krishnankutty Kolathappilly - msm: cpp: Do not free stripe info pointer allocated by backend
+ Subbaraman Narayanamurthy - ARM: dts: msm: change PS_THRESHOLD for LAB regulator to 20 mA
+ Subbaraman Narayanamurthy - ARM: dts: msm: disable the PON peripheral of PM8004
+ Sudheer Papothi - ASoC: wcd9330: Optimize delay after micbias enable
+ Ravi Aravamudhan - diag: Do not add duplicate buffers to list in MEMORY_DEVICE_MODE
+ William Clark - seemp_core: Aggregate framework events in user daemon
+ William Clark - defconfig: msm8994: Add config option to enable seemp
+ Ujwal Patel - msm: mdss: xlog: add new xlog messages and remove unnecessary ones
+ Ujwal Patel - msm: mdss: set valid_roi as true when ctl paths are initialized
+ Vasko Kalanoski - msm: camera: validate power down/up array size to prevent overflow
+ Sagar Gore - msm: camera: isp: Added reg update after stats wm disable
+ Azam Sadiq Pasha Kapatrala Syed - msm: camera: Handle race condition on stream buffer ops
+ Fred Oh - ASoC: msm: qdsp6v2: avoid same mixer control name with stream channel map
+ Nagesh Subba Reddy - msm: camera: Unlock the VFE kernel driver while waiting
+ Rajakumar Govindaram - msm: camera2: cpp: Setup timer once during probe
+ Chandan Uddaraju - msm: mdss: configure clk_lane_cnt variable for recovery failure
+ Viswanadha Raju Thotakura - msm: camera: support for sequential write
+ Konstantin Motov - msm: camera: fix freme id for memory to memory ISP processing
+ Atish Kumar Patra - net: ipc_router: Fix socket reference in IPC Router
+ Adrian Salido-Moreno - msm: mdss: add proper locking for buffer lists
+ Ravi Aravamudhan - diag: Update SSIDs, event ids and log codes
+ Siddhartha Agrawal - msm: dsi: Silence DSI phy lane 0 error during ulps exit
+ Sudheer Papothi - ASoC: msm: qdsp6v2: Add wake lock for speaker protection
+ Laura Abbott - arm64: Add CONFIG_CC_STACKPROTECTOR
+ David Brown - defconfig: Enable stack protection on 64-bit MSM
+ Adrian Salido-Moreno - mdss: rotator: remove ov_lock for rotator sessions
+ Ashray Kulkarni - msm: vidc: fix error handling during hardware overload error
+ Ujwal Patel - ARM: dts: msm: enable Bandwidth Compression for msm8992
+ Haynes Mathew George - ASoC: msm: qdsp6v2: DAP: Unset device active state on init error
+ Banajit Goswami - ASoC: msm: qdsp6v2: avoid returning 0-size cal block
+ Hemant Kumar - usb: gadget: Dereference i_bdev of inode only for block device
+ Subbaraman Narayanamurthy - ARM: dts: msm: specify the CC_CV setpoint for PMi8994
+ Subbaraman Narayanamurthy - power: qpnp-fg: add support for configuring the CC_CV setpoint
+ Subbaraman Narayanamurthy - ARM: dts: msm: enable auto adjust float voltage algorithm for PMi8994
+ Dov Levenglick - mmc: sdhci: support IRQ affinity
+ Ram Chandrasekar - power: bcl: Unregister SoC when BCL is disabled
+ Sreesudhan Ramakrish Ramkumar - msm: camera: isp: Handle axi stream off failure
+ Subbaraman Narayanamurthy - power: qpnp-smbcharger: support configuring fast charge current dynamically
+ Subbaraman Narayanamurthy - power: qpnp-smbcharger: fix the FCC misconfiguration in parallel charging
+ Huaibin Yang - msm: mdss: extend mutex offlock for dfps updates
+ Huaibin Yang - msm: mdss: initialize shadow clocks regardless DFPS modes
+ Xiaozhe Shi - power: qpnp-smbcharger: account for battery OCP for flash prediction
+ Ram Chandrasekar - power: bcl: Clear the hotplug mask immediately
+ Dov Levenglick - Revert "Revert "ARM: dts: msm: define multiple latency and affinity masks for msm8994""
+ Dov Levenglick - Revert "Revert "ARM: dts: msm: define multiple latency and affinity masks for msm8992""
+ Dov Levenglick - Revert "Revert "mmc: host: sdhci: update pm qos votes based on cpu clusters""
+ Dov Levenglick - Revert "mmc: sdhci-msm: support multiple pm_qos configurations"
+ Dov Levenglick - Revert "mmc: sdhci-msm: add pm_qos trace-points"
+ Dov Levenglick - Revert "ARM: dts: msm: latencies and affinity masks for 8994 and 8992"
+ Dov Levenglick - Revert "mmc: sdhci-msm: support IRQ affinity based on pm_qos"
+ Ram Chandrasekar - msm: lmh_lite: check intensity value before enabling interrupt
+ Ram Chandrasekar - power: bcl_peripheral: Account derated threshold for false trigger
+ Ram Chandrasekar - power: bcl_peripheral: Use edge trigger interrupt
+ Sagar Gore - msm: camera: cpp: Changes to support batch mode
+ Andrei Danaila - msm: mhi: Enable log level sysfs for MHI UCI
+ Rajeev Kulkarni - msm: kgsl: Disable CP speed up during bootup for A430 derivatives
+ Aravind Venkateswaran - Revert "msm: mdss: dsi: enter ULPS after blanking the panel during suspend"
+ Shubhraprakash Das - msm: kgsl: CP parser fixes
+ Viswanadha Raju Thotakura - msm: camera: Fix invalid pointer dereference
+ Hariram Purushothaman - msm:camera: Adopt cpp and vpe to use buff type
+ Jeevan Shriram - ARM: dts: msm: Enable continuous splash screen for NT35597 panel
+ Jeevan Shriram - ARM: dts: msm: Enable tear check gpio on NT35597 FBC panel
+ Huaibin Yang - Revert "ARM: dts: msm: set clock mode as default dfps update mode for msm8992"
+ Tony Truong - msm: pcie: add vbg optimization support
+ Tony Truong - ARM: dts: enable vbg optimization for PCIe on MSM8992
+ Subbaraman Narayanamurthy - power: smb135x-charger: add support for configuring float voltage
+ Subbaraman Narayanamurthy - power: qpnp-smbcharger: adjust the float voltage of parallel charger
+ Subbaraman Narayanamurthy - power: qpnp-smbcharger: restart charging if AICL is suspended
+ Dov Levenglick - ARM: dts: msm: change 8994 and 8992 little cluster pm_qos latencies
+ Jane Zhou - net/ping: handle protocol mismatching scenario
+ Harsh Shah - msm:camera:isp: Check stream state in axi irq handler
+ Syed Rameez Mustafa - sched: Ensure attempting load balance when HMP active balance flags are set
+ Hariram Purushothaman - msm:camera: Support batch processing in generic buf mgr
+ Huaibin Yang - msm: mdss: force display panel status dead
+ Huaibin Yang - ARM: dts: msm: enable bta check mode for sharp wqxga panel
+ Huaibin Yang - msm: mdss: add mutex locking when BTA is triggered
+ Praneeth Paladugu - msm: vidc: Add support to read venus version through debugfs
+ Pushkar Joshi - clk: qcom: clock-gcc-8992: Modify gpll4 and sdcc1 clock frequency
+ Venkat Gopalakrishnan - ARM: dts: msm: adjust SDC1 clock frequencies for msm8992
+ Sagar Gore - msm: camera: cpp: Increase num of stream buffers
+ Azhar Shaikh - usb: dwc3: Add current override module params for DCP/HVDCP chargers
+ Sagar Gore - msm: camera: isp: Changes for Camif irq subsample
+ Azhar Shaikh - usb: dwc3: Change the current drawn for HVDCP to 1800mA
+ Subbaraman Narayanamurthy - ARM: dts: msm: add fuse-rev 4 adjustments for APC CPR regulators on msm8992
+ Murali Nalajala - ARM: msm: dts: Add flag to not switch PLLs during retention for MSM8992
+ Murali Nalajala - ARM: dts: msm: Revise LPM parameters for 8992
+ Murali Nalajala - ARM: dts: msm: Set a53 cpu retention voltage to 0.55v on MSM8992
+ Praneeth Paladugu - msm: vidc: Consolidate internal buffers allocation and reuse code
+ Jack Pham - usb: gadget: diag: Fix potential use-after-free
+ Prasad Sodagudi - pinctrl: msm: Free mapping table entries of PIN_MAP_TYPE_MUX_GROUP type
+ Rohit Gupta - cpufreq: interactive: Rearm governor timer at max freq
+ Ashray Kulkarni - msm: vidc: Update minimum decoder output buffer count
+ Ujwal Patel - msm: mdss: fix data mismatch errors on rotator
+ Phani Kumar Uppalapati - ASoC: wcd9330: Notify MBHC as soon as HPH PA is turned off
+ Tony Truong - Revert "msm: pcie: update PCIe PHY sequence on MSM8992"
+ Ingrid Gallardo - msm: mdss: debugfs: xlog: fix xlog corruption in ramdump
+ Vikram Mulukutla - qcom: peripheral-loader: Introduce an API to free relocatable memory
+ Ankit Gupta - ARM: dts: msm: enable i2C devices for dma engine on msm8994
+ Ankit Gupta - ARM: dts: msm: configure DMA engine for BLSPs of msm8994
+ Iliya Varadzhakov - msm: cpp: Update iommu handling
+ Konstantin Motov - msm: camera: Add support for buffer dequeue form user space
+ Praneeth Paladugu - msm: vidc: Skip processing of release buffer event
+ Vikram Mulukutla - qcom: subsystem_restart: Introduce a callback to free memory
+ Praneeth Paladugu - ARM: dts: msm: Add low power bus vectors for encoder on MSM8994
+ Ram Chandrasekar - msm: thermal: Limit the emergency mitigation messages
+ Xiaozhe Shi - power: qpnp-smbcharger: only rerun aicl when a high ICL is requested
+ Xiaozhe Shi - power: qpnp-fg: debounce soc empty in software
+ Xiaozhe Shi - ARM: dts: msm: set fg-chg-iterm-ma to 100 mA for PMI8994
+ Xiaozhe Shi - power: qpnp-fg: configure charger termination current
+ Xiaozhe Shi - power: qpnp-fg: lower default cutoff and empty voltages
+ Subbaraman Narayanamurthy - power: qpnp-fg: retrieve the cycle counter from FG SRAM when device boots
+ Xiaozhe Shi - power: qpnp-fg: force BCL HPM during charge
+ Xiaozhe Shi - ARM: dts: msm: update itech 3000mAh battery profile
+ Ashray Kulkarni - msm: vidc: aggregate ocmem bandwidth for low-power mode
+ Lucille Sylvester - msm: kgsl: Enable POPP functionality at GPU turbo
+ Lucille Sylvester - msm: kgsl: Power Optimizer Push-Pop
+ Subbaraman Narayanamurthy - ARM: dts: msm: update quotients and voltages for APC regulators on msm8994
+ Karthik Reddy Katta - voice_svc : Fix crash in voice_svc driver during SSR
+ Talel Shenhar - mmc: sdhci-msm: support IRQ affinity based on pm_qos
+ Skylar Chang - msm: ipa: change to use vzalloc API instead
+ Jeykumar Sankaran - ARM: dts: msm: enable DSI timing register double buffering for 8992
+ Vikram Mulukutla - clk: qcom: clock-pll: Remove no_prepared_reconfig optimization check
+ Lucille Sylvester - msm: kgsl: Add a framework to track timing of power events
+ Ashray Kulkarni - msm: vidc: replace resurrect_fw with unload_fw
+ Ingrid Gallardo - msm: mdss: fix to return error when overlay get/set fail
+ Subbaraman Narayanamurthy - pwm: qpnp: do not control EN_PWM_OUTPUT for LPG lite peripherals
+ Mayank Rana - usb: gadget: ncm: Add super speed descriptors for NCM function
+ Krishna Chaitanya Parimi - msm: mdss: Fix AD calibration mode resume backlight issue
+ Naveen Kaje - i2c-msm-v2: avoid unnecessary DMA init and channel free
+ William Clark - msm: crypto: Modify crypto libraries for FIPS139-2 Certificate
+ Xiaozhe Shi - power: qpnp-fg: check for battery empty status before reloading profile
+ Gopikrishnaiah Anandan - msm: mdss: Return ESHUTDOWN error when driver is shutting down
+ Harsh Shah - msm: camera: isp: Fix the framedrop pattern for burst streams
+ Petar Sivenov - msm: camera: isp: allow state transition for controllable output
+ Iliya Varadzhakov - msm: cpp: Increase frame message max length
+ Harsh Shah - msm:camera:isp: Make AB and IB equal for performance reasons
+ Sagar Dharia - qcom-sps-dma: Avoid re-allocation of pre-allocated resources
+ Ingrid Gallardo - msm: mdss: disable vertical blanking bw calculations
+ William Clark - qseecom: avoid buffer over-write when copying app_name
+ Nagesh Subba Reddy - msm: camera: Fix request frame while CDS is on
+ Vasko Kalanoski - msm: camera: set correct I2C master device in ois probe function
+ Vasko Kalanoski - msm: camera: check for correct I2C master device
+ Vasko Kalanoski - msm: camera: Make sure the init happens before release in actuator
+ Lucille Sylvester - msm: kgsl: Do not reset bus/GPU frequency ratio
+ Lucille Sylvester - msm: kgsl: Replace jiffy sampling with usec
+ Lucille Sylvester - msm: kgsl: Fix the busy counter initialization sequence
+ Megha Tak - msm: camera: isp: Resetting init framedrop if source is active
+ Petar Sivenov - msm: camera: isp: fix initial frame drop for burst streams
+ Jie Cheng - power: smb1351-charger: Add SMB1351 software JEITA support
+ Alexy Joseph - ASoC: msm: qdsp6v2: improve DTS Eagle driver for all possible i/p
+ Jack Pham - ARM: dts: msm: Add bus voting parameters to USB EHCI on 8994 and 8992
+ Jack Pham - usb: host: ehci-msm2: Add bus voting support to driver
+ Houston Hoffman - NFC: increase reset notification timeout
+ Vishnuvardhan Prodduturi - msm: mdss: handoff programmable fetch from bootloader to kernel
+ Fred Oh - ASoC: msm: qdsp6v2: fix adm rx direction as 0
+ Evgeniy Borisov - msm: camera: Set correct I2c master dev
+ Prasad Sodagudi - msm: kgsl: Allocate enough space for the fault detect registers
+ Konstantin Motov - msm: camera: add support for NV24 and NV12 pix format
+ Veera Sundaram Sankaran - ARM: dts: msm: enable cont-splash for sharp 1080p cmd panel
+ Fred Oh - ASoC: msm: qdp6v2: handle proxy read failure
+ Houston Hoffman - NFC: increase reset notification timeout
+ Ujwal Patel - msm: mdss: enable source split with dual-dsi partial update
+ Jeykumar Sankaran - Revert "msm: mdss: fix boot-up issues with splash thread enabled"
+ Padmanabhan Komanduru - msm: mdss: featurize bus bandwidth vote required during IOMMU attach
+ Veera Sundaram Sankaran - ARM: dts: msm8992: Add support for simulator panels
+ Trilok Soni - defconfig: msm8994: Enable RCU_CPU_STALL info and RCU trace events.
+ Subbaraman Narayanamurthy - power: qpnp-fg: prevent ESR creep during taper charging
+ Jeevan Shriram - msm: mdss: update mdp clock rate with pingpong split enabled
+ Shubhraprakash Das - msm: kgsl: For soft fault detect only check rbbm_status
+ Ashray Kulkarni - ARM: dts: msm:  Remove bus vector fudge factor for decoder
+ Ashray Kulkarni - ARM: dts: msm: Add low power bus vectors for 8992 encoder
+ Mayank Rana - ARM: dts: msm: Increase Data and Desc FIFO size of USB BAM's Pipes
+ David Ng - arm64: Add 32-bit sigcontext definition to uapi signcontext.h
+ Pushkar Joshi - clk: qcom: clock-mmss-8992: Move VFE control from GDSC to branch
+ Jack Pham - ARM: dts: msm: Remove USB UICC LUNs from 8992 and 8994
+ Mitchel Humpherys - msm: ADSPRPC: Clear output buffers before cache invalidation
+ Ping Li - msm: mdss: Fix bugs in mdss code
+ Ping Li - fbcmap: Remove unnecessary condition check
+ Ingrid Gallardo - msm: mdss: skip bw vote for same bw requests
+ Ping Li - msm: mdss: Unblock mdp PP features when AD calib mode is enabled
+ Mayank Rana - usb: gadget: ncm: Fix default ndp_sign value
+ Mayank Rana - usb: dwc-msm: Handle power event IRQ with block reset
+ Dan Sneddon - spi: spi_qsd: Reduce latency for non-shared cores
+ Talel Shenhar - mmc: card: remove HPI and Cache quirks for Hynix cards
+ Dov Levenglick - ARM: dts: msm: latencies and affinity masks for 8994 and 8992
+ Dov Levenglick - mmc: sdhci-msm: add pm_qos trace-points
+ Dov Levenglick - mmc: sdhci-msm: support multiple pm_qos configurations
+ Dov Levenglick - Revert "mmc: host: sdhci: update pm qos votes based on cpu clusters"
+ Dov Levenglick - Revert "ARM: dts: msm: define multiple latency and affinity masks for msm8992"
+ Dov Levenglick - Revert "ARM: dts: msm: define multiple latency and affinity masks for msm8994"
+ Ujwal Patel - msm: mdss: rotator: return dst format for request match optimization
+ Ujwal Patel - msm: mdss: rotator: fix synchronization issue with multiple sessions
+ Ravi Gummadidala - ARM: dts: msm: increase WAN_RX pool size for 8994
+ Patrick Lai - ASoC: msm: qdsp6v2: separate multi channel map for playback and record
+ Petar Sivenov - msm:camera:isp: fix array index bound checks
+ Ashray Kulkarni - ARM: dts: msm:  Remove bus vector fudge factor for encoder.
+ Alok Chauhan - devfreq: devfreq_spdm: Correct Memory usages check in error cases
+ Gopikrishnaiah Anandan - msm: mdss: update the pp status flags for layermixer
+ Xiaozhe Shi - power: qpnp-fg: add support for battery age estimation
+ Xiaozhe Shi - ARM: dts: msm: enable battery capacity learning on PMI8994
+ Jack Pham - usb: dwc3-msm: Handle erratic event with full POR sequence
+ Jeevan Shriram - msm: mdss: update bandwidth equation when pingpong split enabled
+ Ping Li - msm: mdss: Update ad_bl_level on first set backlight call
+ Krishna Chaitanya Parimi - msm: mdss: Protect ad_bl_level using ad_lock mutex
+ Ravi Aravamudhan - diag: Add support for Extended Mobile ID
+ Senthil Kumar Rajagopal - msm: camera: isp: fix for avtimer power collapse
+ Mayank Rana - USB: f_fs: Add memory barrier before atomic operations
+ Ram Chandrasekar - msm: limits: Bypass sensor poll disable if sensor throttling
+ Ram Chandrasekar - msm: lmh_lite: Return error on disabling a throttling sensor
+ Harsh Shah - msm: camera: isp: Add debug logs for IOMMu issue
+ Shiju Mathew - ARM: dts: msm: Add LLM sensor into MSM8994 thermal sensor info node
+ Srivatsa Vaddagiri - sched: Add cgroup-based criteria for upmigration
+ Terence Hampson - mdss: mdp: Update partial_update_enable during mode switch
+ Casey Piper - msm: mdss: hdmi: fix CEC compliance errors
+ Ram Chandrasekar - msm: thermal: Update thermal to mitigate during shutdown
+ Rajeev Kulkarni - msm: kgsl: Do not take active count in snapshot
+ Rajeev Kulkarni - msm: kgsl: Correct register offsets for reading ME microcode
+ Haynes Mathew George - ASoC: msm: qdsp6v2: Fix DS2 out of bounds access
+ Krishna Chaitanya Parimi - msm: mdss: add init and deinit calls to notify update ioctl
+ Tony Truong - msm: pcie: update PCIe PHY sequence on MSM8992
+ Vikram Mulukutla - qcom: clock-rpm-8994: Switch modem pnoc vote to an exclusive voter
+ Joonwoo Park - sched: actively migrate big tasks on power CPU to idle performance CPU
+ Huaibin Yang - ARM: dts: msm: update phy regulator and lane settings for msm8992
+ Huaibin Yang - ARM: dts: msm: set clock mode as default dfps update mode for msm8992
+ Huaibin Yang - msm: mdss: change dfps mode through framebuffer device node
+ Jeykumar Sankaran - msm: mdss: Fix error value on pipe priority mismatch
+ Jack Pham - usb: phy: qusb: Correctly configure interrupt mask in suspend
+ Mayank Rana - usb: qmp: phy: Add misc configuration for QMP PHY rev1
+ Dov Levenglick - ARM: dts: msm: schedule mmcqd on idle CPU on 8992 and 8994
+ Dov Levenglick - mmc: add support for scheduling mmcqd on idle CPU
+ Trilok Soni - qcom: msm: event-timer: Check the cpu num before adding a new event-timer
+ Feng Kan - arm64: enable PTE type bit in the mask for pte_modify
+ Rajakumar Govindaram - msm: camera2: cpp: Lock cpp timer operations
+ Ping Li - msm: mdss: Notify AD only when brightness changes
+ Pushkar Joshi - clk: qcom: clock-8992: Fix hash value for pnoc_modem_clk
+ Deepak Kaushal - msm: camera: sensor: Free vc_cfg pointer in case of error
+ Huaibin Yang - msm: mdss: ignore overflow error when trigger BTA for video mode panel
+ Harsh Shah - msm:camera:isp: remove double stats ab/ib voting
+ Venu Yeshala - msm: camera: isp: Update AB and IB top up values
+ Sagar Gore - msm: camera: isp: Add camif subsample interface
+ Tony Truong - msm: pcie: sanity check when calculating EP CAP offset
+ Subbaraman Narayanamurthy - power: qpnp-fg: add support for cycle counter
+ Subbaraman Narayanamurthy - ARM: dts: msm: enable cycle counter for PMi8994
+ Alexy Joseph - ASoC: msm: qdsp6v2: enable few important logs for DTS HPX
+ Alexy Joseph - ASoC: msm: change DTS HPX custom topology ids
+ Ingrid Gallardo - ARM: dts: msm: set default ot limits for 8994
+ Ingrid Gallardo - ARM: dts: msm: set default ot limits for 8992
+ Ingrid Gallardo - msm: mdss: refactor ot limits to support rd and wr
+ Ingrid Gallardo - ARM: dts: msm: correct VBIF QoS settings for MDP in 8992
+ Tony Truong - msm: pcie: remove duplicate call to get aux clk from dt
+ Tony Truong - msm: pcie: only look for EP CAP reg for certain testcases
+ Tony Truong - msm: pcie: add support to enable common clock for RC
+ Subbaraman Narayanamurthy - power: qpnp-smbcharger: detect and reject faulty charger
+ Abhijeet Dharmapurikar - power: qpnp-smbcharger: configure AICL deglitch timer on low Vbatt
+ Patrick Daly - defconfig: Enable xpu protection of linux code region
+ Jordan Crouse - msm: kgsl: Propagate the return error from request_firmware() up
+ David Collins - ARM: dts: msm: add per-online CPU APC1 voltage adjustments for 8994
+ Tony Truong - msm: pcie: correct the shadow save for RC L1 register
+ Subbaraman Narayanamurthy - power: qpnp-fg: add support for handling low battery voltage interrupt
+ Subbaraman Narayanamurthy - power: qpnp-smbcharger: add low-volt-dcin device tree property
+ Tony Truong - ARM: dts: msm: add sleep set for PCIe GPIO on MSM8992
+ Joonwoo Park - Revert "topology: enable SD_SHARE_PKG_RESOURCES at CPU level"
+ Joonwoo Park - sched: avoid running idle_balance() on behalf of wrong CPU
+ Yuanyuan Liu - ARM: dts: msm: Properly configure GPIO 54 53
+ Patrick Daly - scm-mpu: Add additional memory protection options
+ Ping Li - msm: mdss: Use the correct bl_mfd for panel backlight info
+ Laura Abbott - ion: Use up_read where appropriate
+ Ashray Kulkarni - msm: vidc: add support for loading lowpower bus vectors
+ Yuanyuan Liu - cnss: handle more than one bootstrap gpio in cnss driver
+ Jeff Bernard - ARM: dts: msm: Change KTM emergency mitigation from 95C to 100C
+ Syed Rameez Mustafa - sched: Avoid pulling big tasks to the little cluster during load balance
+ Syed Rameez Mustafa - sched: Avoid pulling all tasks from a CPU during load balance
+ Manaf Meethalavalappu Pallikunhi - msm: thermal: Revert devm_kzalloc to kzalloc in sensor manager APIs
+ Manaf Meethalavalappu Pallikunhi - msm: thermal: Fix potential memory leak in sensor manager API in KTM
+ Sagar Gore - msm: camera: cpp: Avoid cpp frame access during error
+ Rajakumar Govindaram - msm: camera2: cpp: Enhance timeout handler for multi-frame processing
+ Senthil Kumar Rajagopal - msm: camera isp: fix for stats buf divert for dual vfe
+ Ravi Gummadidala - ARM: dts: msm: increase WAN_RX pool size for 8992
+ Nagesh Subba Reddy - msm: camera: Add protection for buffer queue
+ Nagesh Subba Reddy - ARM: dts: msm: Update the VFE DS settings for msm8992
+ Ankit Gupta - ARM: dts: msm: correct blsp number for i2c for msm8992
+ Srivatsa Vaddagiri - sched: Keep track of average nr_big_tasks
+ Srivatsa Vaddagiri - sched: Fix bug in average nr_running and nr_iowait calculation
+ Rajakumar Govindaram - msm: camera2: cpp: Partial frame processing for snapshot stream
+ Krishnankutty Kolathappilly - msm: cpp: Ad ubwc specific parameters to cpp driver
+ Krishnankutty Kolathappilly - msm: cpp: Dump the payload before timer is started
+ Sreelakshmi Gownipalli - diag: Check if usb is connected while allocating usb requests
+ Subbaraman Narayanamurthy - power: qpnp-smbcharger: improve handling USB insertion/removal
+ David Collins - regulator: cpr-regulator: add online CPUs based voltage adjustment support
+ Ramakant Singh - msm: mdss: fix IOMMU fault in smart blit
+ Huaibin Yang - msm: mdss: return error if dynamic refresh interrupt is timeout
+ Huaibin Yang - msm: mdss: set mdp video stop mode
+ Huaibin Yang - msm: mdss: update DSI PLL and pipe delays
+ Huaibin Yang - clk: mdss: update dfps sequence
+ Huaibin Yang - clk: mdss: find pre-calibrated PLL codes
+ Jeevan Shriram - ARM: dts: msm: Add memory region for dynamic refresh rate on 8992
+ Jeevan Shriram - ARM: dts: msm: Add memory region for dynamic refresh rate on 8994
+ Huaibin Yang - clk: msm: mdss: pass pre-calibrated PLL codes to clock driver
+ Huaibin Yang - ARM: dts: msm: add shadow byte and pixel src clocks for msm8992
+ Huaibin Yang - clk: qcom: mdss: add mdss shadow DSI 20nm pll clock for msm8992
+ Chaithanya Krishna Bacharaju - ASoC: msm: qdsp6v2: Avoid populating memory handle in error case
+ Bhalchandra Gajare - ASoC: msm-cpe-lsm: Make sure LAB data channel is stopped
+ Shilpa Mamidi - msm: cpp: Free pointer in error case
+ Harout Hedeshian - net: socket: make sure refs are not released on fd before calling sockev
+ Shiju Mathew - ARM: dts: msm: Update BCL Ibat and Vbat thresholds on MSM8992
+ Kuogee Hsieh - msm: mdss: add iommu mutex for dsi dcs command send
+ Chun Zhang - leds: leds-qpnp-flash: enable MASK module for flash LED
+ Veera Sundaram Sankaran - ARM: dts: msm: enable MDP macrotile format support for msm8992
+ Dan Sneddon - devfreq: spdm: Fix debugfs file permissions
+ Lijuan Gao - platform: qpnp-power-on: Store device restart reason in PMIC register
+ Susheel Khiani - defconfig: msm: Reduce common CMA area to 8MB
+ Olav Haugan - sched/fair: Respect wake to idle over sync wakeup
+ Jigarkumar Kishorkumar Zala - deconfig: msm8994: Enable DMA driver for BAM
+ Ravi Gummadidala - msm: ipa: fix for socket buffer memory accounting
+ Ravi Gummadidala - msm: ipa: add support to configure WAN_RX pool size
+ Ram Chandrasekar - power: bcl_peripheral: Update the bcl interrupt to be threaded
+ Shiju Mathew - power: bcl_peripheral: Recalibrate BCL after FG switch current sensing
+ Fred Oh - ASoC: Compress: fix memory corruption issue in memcpy
+ Sagar Dharia - slim_msm: Do not deregister BAM if command-only pipes fail to init
+ Phani Kumar Uppalapati - ASoC: hdmi-codec: rate limit the debug print messages
+ Huaibin Yang - ARM: dts: msm: change back light ctrl for sharp 1080p cmd panel to WLED
+ Maxim Patlasov - fuse: fuse_flush() should wait on writeback
+ Pavel Emelyanov - fuse: Implement write_begin/write_end callbacks
+ Jyoti Iyer - Revert "msm: mdss: calculate the correct ROI for flipped panels"
+ Xiaozhe Shi - power: qpnp-fg: set temperature ocv constants
+ Xiaozhe Shi - power: qpnp-smbcharger: qpnp-fg: change how fg status works
+ Naveen Kaje - msm_serial_hs: avoid unnecessary rx processing during port setup
+ Ankit Gupta - i2c-msm-v2: Avoid writing core registers when HW is not ready
+ Ankit Gupta - i2c-msm-v2: fix potential spinning forever in ISR
+ Kaushal Kumar - ARM: dts: msm: Enable FUNC_SEL selection for aux pcm pins on 8994
+ Jack Pham - usb: gadget: qti: Avoid passing NULL to disconnect()
+ Takashi Iwai - ALSA: usb-audio: Fix races at disconnection and PCM closing
+ Hemant Kumar - usb: gadget: f_mbim: Queue notification request upon function resume
+ Skylar Chang - msm: ipa: check the nat table offset sizes
+ Praneeth Paladugu - msm: vidc: cancel power collapse before venus command
+ Alexy Joseph - ASoC: msm: qdsp6v2: avoid setting DTS HPX param on invalid copp
+ Ben Romberger - ASoC: msm: Correct RTAC mutex lock
+ Ujwal Patel - msm: mdss: prevent excessive logging after shutdown requested
+ Abhijeet Dharmapurikar - power: qpnp-smbcharger: use secure access to update dcin limit registers
+ Junjie Wu - qcom-cpufreq: Remove save/restore of scheduling policy
+ Jeykumar Sankaran - Revert "msm: mdss: fix boot-up issues with splash thread enabled"
+ Padmanabhan Komanduru - msm: mdss: featurize bus bandwidth vote required during IOMMU attach
+ Girish Mahadevan - ARM: dts: msm: Update SPDM CPU port parameters for msm8992
+ Zhen Kong - ARM: dts: msm: Update crypto BW request for FDE on msm8992
+ Sivan Reinstein - msm: ipa: add a check for header len when adding a header to ipa
+ Bhalchandra Gajare - ASoC: q6lsm: Add check for integer overflow
+ Subbaraman Narayanamurthy - ARM: dts: msm: update S3 timer configuration for PMi8994 and PM8004
+ Vasko Kalanoski - msm: camera: Call power_down when occur release in flash driver
+ Daqing Chen - input: sensors: add lis3dh accelerometer calibrate feature
+ Neeti Desai - defconfig: Reduce the size of the default CMA heap to 16MB
+ Siddhartha Agrawal - msm: mdss: Add dt support to enable clk lane recovery
+ Ravi Aravamudhan - diag: Make fixes to diag_switch_logging
+ Fred Oh - ASoC: msm: qdsp6v2: minimize error logs
+ Casey Piper - clk: msm: modify break condition in C READY polling
+ Alok Kediya - msm: isp: validate vfe_intf max params
+ Rajakumar Govindaram - msm: camera2: cpp: Extend interface for partial frames
+ Sudheer Papothi - ARM: dts: msm: Enable FUNC_SEL selection for MI2S pins on 8994
+ Jeevan Shriram - msm: mdss: increase wait for kickoff timeout in display thread
+ Joonwoo Park - sched: fix rounding error on scaled execution time calculation
+ Pushkar Joshi - clk: qcom: clock-rpm: Add interface to vote for BIMC clock
+ Pushkar Joshi - clk: qcom: clock-8992: Enable RPM DCVS after putting in all RPM clock votes
+ Pavel Emelyanov - fuse: Turn writeback cache on
+ Pavel Emelyanov - fuse: Fix O_DIRECT operations vs cached writeback misorder
+ Maxim Patlasov - fuse: restructure fuse_readpage()
+ Pavel Emelyanov - fuse: Flush files on wb close
+ Maxim Patlasov - fuse: Trust kernel i_mtime only
+ Pavel Emelyanov - fuse: Trust kernel i_size only
+ Rajakumar Govindaram - msm: camera2: cpp: Check IOMMU status before processing frame
+ Dan Sneddon - ARM: dts: msm: Modify DCVS params and enable coresight on 8992
+ Ujwal Patel - msm: mdss: enable partial update with ping-pong split
+ Jeykumar Sankaran - Revert "ARM: dts: msm: disable partial update for msm8992"
+ Ingrid Gallardo - msm: mdss: reduce rotator fps for high resolution
+ Patrick Daly - msm: rtb: Fix buffer corruption issue
+ Ankit Gupta - ARM: dts: msm: configure DMA engine for BLSPs of msm8992
+ Ankit Gupta - ARM: dts: msm: enable i2c devices for dma engine on msm8992
+ Gilad Avidov - defconfig: msm8994: Enable DMA driver for BAM
+ Adrian Salido-Moreno - msm: mdss: clean any dirty pipes after a successful prepare
+ Subbaraman Narayanamurthy - ARM: dts: msm: specify quot-offset-adjustment for APC regulators on msm8992
+ Subbaraman Narayanamurthy - ARM: dts: msm: remove open loop adjustment for APC0 SVS2 corner on msm8992
+ Subbaraman Narayanamurthy - ARM: dts: msm: update initial voltage for APC0 SVS2 corner on msm8992
+ Subbaraman Narayanamurthy - ARM: dts: msm: update the interpolation for APC CPR regulators on msm8992
+ Weiyin Jiang - ASoC: msm: audio-effects: Check for array index
+ Ray Zhang - ARM: dts: msm: adjust 8909 skuc ili9806e mipi clock to 213.9MHZ
+ Gjorgji Rosikopulos - msm: camera: face detect: fix stream off sync issue
+ Maya Erez - ARM: dts: msm: define multiple latency and affinity masks for msm8992
+ Venkat Gopalakrishnan - ARM: dts: msm: define multiple latency and affinity masks for msm8994
+ Venkat Gopalakrishnan - mmc: host: sdhci: update pm qos votes based on cpu clusters
+ Dov Levenglick - Revert "ARM: dts: msm: latencies and affinity masks for 8994 and 8992"
+ Dov Levenglick - Revert "mmc: sdhci-msm: add support for multiple qos configurations"
+ Chandan Uddaraju - ARM: dts: msm: enable 90 phase dsi vco frequency for msm8992
+ Sreelakshmi Gownipalli - diag: Add support for voting active mask in callback mode
+ Lijuan Gao - ARM: dts: msm: Add hard reset property for MSM8916
+ Lijuan Gao - power: reset: initialize hard reset code
+ Kaushal Kumar - msm: socinfo: Add soc-id for 3G variant of msm8909
+ Kaushal Kumar - ARM: dts: msm: Add msm-id for msm8609
+ Venu Yeshala - Revert "msm: camera: isp: Check bounds for ISP command parameters"
+ Ravi Gummadidala - msm: rmnet_ipa: use netif_rx_ni to push packets to network stack
+ Ravi Gummadidala - msm: rndis_ipa: use netif_rx_ni to push packets to network stack
+ Ravi Gummadidala - msm: ipa: lock the TX queue during state update
+ Vasko Kalanoski - msm: camera: validate user space parameter for max and min value
+ Tejun Heo - workqueue: fix subtle pool management issue which can stall whole worker_pool
+ Walter Yang - ASoC: wcd: correct handling of GND_MIC_SWAP type detection
+ Rajakumar Govindaram - ARM: dts: msm: Set 320MHz as minimum clock for msm8992
+ Pavel Emelyanov - fuse: Prepare to handle short reads
+ Andrew Gallagher - fuse: don't invalidate attrs when not using atime
+ Dmitry Monakhov - ext4: convert write_begin methods to stable_page_writes semantics
+ Rajat Jain - fuse: fix "uninitialized variable" warning
+ Pavel Emelyanov - fuse: Connection bit for enabling writeback
+ Pavel Emelyanov - fuse: Linking file to inode helper
+ Thomas Gleixner - hrtimer: Prevent stale expiry time in hrtimer_interrupt()
+ Jack Pham - usb: dwc3: Increase EP0 bounce buffer size to 2KB
+ Nagesh Subba Reddy - msm: Camera: Update the burst frame count
+ Pratik Patel - defconfig: enable hypervisor call support on 8994 perf config
+ Gidon Studinski - msm: ipa: reduce sps power management timeout to 100 msec
+ Harout Hedeshian - net: tcp: Scale the TCP backlog queue to absorb packet bursts
+ Taniya Das - clk: qcom: clock-gcc-8909: Add a new level of SVS for MDP
+ Biswajit Paul - kernel: Restrict permissions of /proc/iomem.
+ Junjie Wu - clk: qcom: clock-mmss-8992: Set NO_RATE_CACHE for display clocks
+ Junjie Wu - clk: qcom: clock-mmss-8994: Set NO_RATE_CACHE for display clocks
+ Junjie Wu - clk: qcom: clock-local2: Only update display RCG if config changes
+ Sarangdhar Joshi - coresight: use dt property to specify atid for tpda
+ Ajay Singh Parmar - msm: mdss: do not issue RESET event from display thread
+ Venkat Gopalakrishnan - mmc: sdhci-msm: Update DLL reset sequence
+ Gilad Broner - scsi: ufs: add request completion time statistics
+ Pushkar Joshi - clk: qcom: clock-8992: Move gcc_mss_cfg_ahb_clk control to RPM
+ Shivaraj Shetty - ARM: dts: msm: add support for qHD on hx8394d 720p panel
+ Sandeep Panda - ARM: dts: msm: add support for wvga command mode panel
+ Gilad Broner - scsi: ufs: fix tag statistics for flush requests
+ Vignesh Radhakrishnan - defconfig: 8916: Disable kmemleak task stack and module scan
+ Tirupathi Reddy - ARM: dts: msm: Modify CPR parameters to support new fuse bins for 8939
+ Katish Paran - msm: remote debugger driver updates to support 64 bit address space
+ Chintan Pandya - defconfig: msm8909: Don't restrict IOMMU mappings at 4K
+ Alok Chauhan - defconfig: msm8909: Enable SPDM devfreq
+ Bingzhe Cai - input: sensors: configure pinctrl and interrupt for bma2x2
+ Mao Li - leds: aw2013_led: fix issue led->vdd/vcc is NULL
+ Nadine Toledano - msm: ipa: add IPA uC memcpy
+ Mitchel Humpherys - iommu/arm-smmu: use a threaded handler for global faults
+ Gilad Avidov - ARM: dts: Add apps watchdog for fsm9010
+ Gilad Avidov - ARM: dts: msm: Add emmc support at 200MHz in fsm9010
+ Shiju Mathew - power: bcl_peripheral: Fix reading current offset
+ Hemant Kumar - usb: dwc3-msm: Allow Super speed phy suspend in P3 link state
+ Ashray Kulkarni - msm: vidc: enable decoder dcvs for HEVC and VP8
+ Ashray Kulkarni - ARM: dts: msm: Add additional bus vectors for msm8992
+ Amir Samuelov - defconfig: msm8994: Enable mobicore kernel driver
+ Vikram Mulukutla - ARM: dts: msm: Rework the MSM8992 freq plan
+ Karthik Parsha - soc: cpu_pwr_ctl: Update LDO init values based on characterization
+ Huaibin Yang - ARM: dts: msm: enable variable refresh rate in vfp mode for 8992
+ Simmi Pateriya - ASoC: msm8x16-wcd: Do not modify interrupt bits in codec driver
+ Hemant Kumar - usb: u_bam_data: Invalidate prod and cons client handles upon connect
+ Simmi Pateriya - ASoC: wcd: update cross connection logic for removal
+ Simmi Pateriya - ASoC: wcd: fix issue with high impedance headsets
+ Susheel Khiani - ARM: dts: msm: Reduce WCNSS carveout to 5MB for msm8909 512MB devices
+ Ray Zhang - ARM: dts: msm: Update hx8379c panel initialization code
+ Abhishek Kondaveeti - ARM: dts: msm8916: Get camera clock rates on run time
+ Abhishek Kondaveeti - ARM: dts: msm8939: Get camera clock rates on run time
+ Alok Chauhan - ARM: dts: msm: Introduce bus topology for msmtellurium
+ Anirudh Ghayal - power: qpnp-vm-bms: Add POWER_SUPPLY_PROP_RESISTANCE_NOW property
+ Anirudh Ghayal - power: power-supply: add property POWER_SUPPLY_PROP_RESISTANCE_NOW
+ Dan Sneddon - devfreq: devfreq_spdm: Support scm and hvc
+ Krishna Konda - mtd: msm_qpic_nand: fix oobavail value
+ Krishna Konda - mtd: msm_qpic_nand: add support for extended nand id
+ Subbaraman Narayanamurthy - power: qpnp-smbcharger: notify over voltage condition to USB power supply
+ Ravi Gummadidala - msm: ipa: (re)add offline charging support
+ Ingrid Gallardo - msm: mdss: fix cursor alloc and setup
+ Adrian Salido-Moreno - msm: mdss: fix check for hardware cursor mixer stage
+ Susheel Khiani - cma: Add 100ms delay before retrying for CMA allocation
+ Shivaraj Shetty - msm: mdss: update parameter validation for partial update
+ Ramakant Singh - msm: mdss: sysfs node to disable smart blit
+ Ramakant Singh - msm: mdss: Blit optimazation for overlaping layers
+ Mayank Parashar - msm: camera: eeprom: change log level in eeprom
+ Nitesh Gupta - msm: mdss: Fix flooding of partial update enable in logs
+ Vignesh Radhakrishnan - defconfig : 8916 : Remove debug flags for less memory footprint
+ Krishna Chaitanya Parimi - msm: mdss: Validate CSC ioctl for black screen in mdp3
+ Mishra Mahima - defconfig: Enable dm-verity for 8916 target
+ Krishna Chaitanya Parimi - msm: mdss: Fix case of pack pattern being 0 in mdp3
+ Mayank Parashar - msm: camera: Add support for LED flash fast factory boot mode
+ Shivaraj Shetty - msm: mdss: optimize bw calculation when there is no blend
+ Sandeep Panda - ARM: dts: msm: specify the panel ROI restrictions for truly wvga panel
+ Nitesh Gupta - msm: mdss: Disable display PP features if partial update is enabled
+ Nitesh Gupta - msm: mdss: Create sysfs entry for PU state in MDP3
+ Sandeep Panda - ARM: dts: update sharp qhd panel init sequnce
+ Shivaraj Shetty - msm: mdss: optimize bw vote for above 720p video playback
+ Krishna Chaitanya Parimi - msm: mdss: Fix mdp3 resume when GC and CCS are both enabled
+ Krishna Chaitanya Parimi - msm: mdss: Correct erroneous failure when programming LUTs
+ Shivaraj Shetty - ARM: dts: msm: update backlight control for 8909 with PM8916
+ Krishna Chaitanya Parimi - msm: mdss: Return success to hist ON ioctl if running in mdp3
+ Shivaraj Shetty - ARM: dts: msm: align the splash memory size to 4MB
+ Krishna Chaitanya Parimi - msm: mdss: Fix issues of mdp3 ioctls of GC/Hist luts
+ Shivaraj Shetty - msm: mdss: fix iommu issue in recovery mode for 8909
+ Anil Kumar Mamidala - msm: pm: Change the init level of pc debug counters
+ Aravind Kumar - ASoC: wcd9306: Avoid codec read/writes if device is down
+ Aravind Kumar - ASoC: msm8x16-wcd: Avoid codec read/writes if device is down
+ Srinu Gorle - msm: vidc: program QDSS mapping addresses based on target
+ Krishna Chaitanya Parimi - msm: mdss: Add gamma correction support in mdp3
+ Krishna Chaitanya Parimi - msm: mdss: Correct RGB order for LUT programming in mdp3
+ Shivaraj Shetty - mdss: ppp: allow mdp3 to map smmu for buffers used by ppp on 8909
+ Shivaraj Shetty - ARM: dts: remove unused gpio from mdss for 8909 CDP
+ Sandeep Panda - ARM: dts: msm: fix rgb color order for sharp qhd panel
+ Lei Zhou - msm: mdss: Retain register settings across suspend/resume
+ Lei Zhou - msm: mdss: Add one device attribute to expose pack pattern
+ Shivaraj Shetty - msm: mdss: reduce PPP bw vote for 1080p video on 8909
+ Sandeep Panda - ARM: dts: enable partial update feature on truly wvga panel
+ Sandeep Panda - msm: mdss: update partial update sequence in 8909
+ Mayank Parashar - msm: driver: Camerav2: Changing pre flash intensity
+ Srinu Gorle - msm: vidc: avoid crash due to division by zero
+ Ameya Thakur - ARM: dts: msm: Disable modem pil loading from mproc code
+ Anshuman Dani - ARM: dts: msm: Modify GPU IB vote as per new DDR clk plan
+ Ashish Jain - ASoC: Kconfig: Enable DS2 for msm8909
+ Anshuman Dani - ARM: dts: msm: Add Nominal plus clock support for GPU
+ Kerong Sui - msm: msm8916: camera: Update ov7695 sensor driver
+ Hanumath Prasad - clock: 8939: Add NOM+ support
+ Kerong Sui - msm: msm8909: camera: Change gc0310 sensor driver
+ Kerong Sui - msm: msm8909: camera: Add gc0310 sensor driver and device tree changes for SKUC
+ Hanumath Prasad - clock: 8939: Update SVS and NOM Fmax for VFE clk
+ Dhanalakshmi Siddani - msm: adsp-loader: Add support to unload modem/adsp image
+ Chaithanya Krishna Bacharaju - ASoC: qdsp6v2: Avoid sending LAB enable twice to adsp
+ Pracheer - defconfig: msm8939: Enable msm_performance module
+ Anusha Koduru - msm: mdss: Fix Compact Ioctls overlay_set failure
+ Mayank Parashar - msm: driver: Camerav2: Disable front LED for full flash
+ Yeleswarapu Nagaradhesh - Revert "ASoC: wcd9xxx: update button press thresholds"
+ Sridhar Gujje - Added CONFIG FILTER support for CTS : SEECOMP Test.
+ Venu Yeshala - ARM: dts: msm: Update VFE memory map region for 8909
+ Yeleswarapu Nagaradhesh - Revert "ASoC: wcd9xxx: Avoid micbias glitches during audio playback"
+ Lokesh Kumar Aakulu - msm: camera: Avoid memory corruption in actuator start routine
+ Mayank Parashar - ARM: dts: msm: Change ispif_ahb_clk frequency
+ Mayank Parashar - msm: driver: Camerav2: Add eeprom support for camera for msm8909
+ Prashant Nukala - msm: mdss: calculate the correct ROI for flipped panels
+ Vishnuvardhan Prodduturi - ARM: dts: msm: Align splash memory size to 4MB
+ Ray Zhang - msm: mdss: add fudge factor for command mode panel
+ Megha Tak - msm-camera: Remove error log for ISP lock
+ Shilpa Mamidi - msm: cpp: Handling GET_INST_INFO ioctl for 64 bit kernel
+ Anil kumar mamidala - defconfig: Disable event timer support for msm8916 targets
+ Ravinder Konka - defconfig: msm8916: Enable CONFIG_NETFILTER_XT_TARGET_IDLETIMER
+ Iliya Varadzhakov - msm: cpp: Add bus client to cpp driver
+ Lokesh Kumar Aakulu - Arm: dts: msm: Add csi1 phy clock source to enable csi1 core
+ Mayank Parashar - msm: camera: Enable LED Flash support on 8909
+ Iliya Varadzhakov - ARM: dts: msm: Add bus master flag to camera dtsi CPP section
+ Maheshwar Ajja - msm: vidc: Increase power collapse timeout value
+ Padmanabhan Komanduru - msm: mdss: add minimum bus vote during IOMMU attach
+ Venu Yeshala - ARM: dts: msm: Update DS QoS settings for 8909
+ Ravi Kishore Tanuku - msm: camera: Add dual LED support in I2C flash driver
+ Wei Ding - msm: camera: Add lm3642 flash driver
+ Ujwal Patel - msm: mdss: fix boot-up issues with splash thread enabled
+ Kui Wang - ARM: dts: msm: Add LM3642 device node for msm8916 SKUD
+ Alok Kediya - msm-camera: Avoid adding top up to calulated ab/ib for single stream.
+ Kerong Sui - msm: msm8916: camera: Add ov7695 sensor driver and device tree changes
+ Ravi Kumar Siddojigari - defconfig: 8916: Disable unused configs
+ Vignesh Radhakrishnan - defconfig : msm8916_64: disable panic on RT throttling
+ Vignesh Radhakrishnan - defconfig: msm8916: disable panic on RT throttling
+ Venu Yeshala - msm: camera: isp: Use single composite stats mask for VFE32
+ Tianyi Gou - ARM: dts: msm: remove always on flag for bimc clock on MDM9640
+ Gilad Avidov - ARM: dts: msm: Disable nand controller in fsm9010
+ Gilad Avidov - ARM: dts: msm: Add cpu0-3 in fsm9010
+ Nagesh Subba Reddy - msm: camera: Propagate IOMMU page fault error
+ Xiaozhe Shi - ARM: dts: msm: add the pon spare registers to bcl on PMI8994
+ Dan Sneddon - ARM: dts: msm: Fix SPI instance on 8992
+ Jack Pham - ARM: dts: msm: Add HSPHY regulator workaround to MSM8992
+ Chandan Uddaraju - ARM: dts: msm: enable 90 phase dsi vco frequency for msm8994
+ Chandan Uddaraju - clk: mdss: add support to enable 90 phase dsi pll vco frequency
+ Dov Levenglick - ARM: dts: msm: latencies and affinity masks for 8994 and 8992
+ Jayant Shekhar - msm: mdss: Print buffer len in hex
+ Mayank Parashar - ARM: dts: msm: Change front camera configuration for msm8909-pm8916
+ Sarangdhar Joshi - coresight: add element size support for dataset types
+ Sarangdhar Joshi - ARM: dts: msm: add atid dt property for tpda on 8994V2
+ Neil Leeder - ARM: dts: msm: add perf-events support for msm8992
+ Dov Levenglick - mmc: sdhci-msm: add support for multiple qos configurations
+ Anand N Sunkad - wcnss: add NULL check before accessing pnv pointer
+ Tirupathi Reddy - ARM: dts: msm: Update static quotient adjustments for 8929
+ Sahitya Tummala - mmc: sdhci-msm: Fix SD card detection issue
+ Nadine Toledano - msm: ipa: add MHI support to IPA
+ Tarun Gupta - USB: gadeget: ci13xxx: Before remote wake_up cancel suspend work
+ Taniya Das - qcom: clk: clock-a7: Introduce device tree lookup for cpu clock
+ Xiaogang Cui - ARM: dts: msm: add dt support for etm save and restore for msmtellurium
+ Venkatesh Yadav Abbarapu - defconfig: fsm9010: Enable HVC0
+ Venkatesh Yadav Abbarapu - defconfig: fsm9010: Enable SMD, SMEM and IPCRTR
+ Venkatesh Yadav Abbarapu - defconfig: fsm9010: Enable IP networking support
+ Venkatesh Yadav Abbarapu - msm: fsm9010: Enable multiple memory regions for uio access
+ Venkatesh Yadav Abbarapu - ARM: dts: msm: Add qfec ethernet device for fsm9010
+ Venkatesh Yadav Abbarapu - net: qfec: Document pinctrl binding in qfec driver
+ Oliver Wang - input: sensors: calibrate LTR553 for msm8909 SKUE
+ Harout Hedeshian - net: tcp: Scale the TCP backlog queue to absorb packet bursts
+ Peter Liu - msm: camera: update ISP47 kernel driver
+ Ashray Kulkarni - ARM: dts: msm: Reduce PIL driver's venus proxy vote time
+ Girish Mahadevan - ARM: dts: msm: Correct the bus clock handles for mdm9640
+ Vikram Mulukutla - clk: qcom: clock-cpu-8994: Fix PLL rate refusal window during boot
+ Vikram Mulukutla - qcom: clock-cpu-8994: Setup PLL dividers in early_init
+ Vikram Mulukutla - clk: qcom: Modify the A57 don't-use-CDIV workaround
+ Aviral Gupta - msm: apr: unblock the apr calls post SSR if the modem is not loaded
+ Sarangdhar Joshi - coresight: add device attributes to support flush request
+ Subbaraman Narayanamurthy - usb: dwc3-msm: add POWER_SUPPLY_PROP_HEALTH property to USB power supply
+ Jeevan Shriram - msm: mdss: update max fence wait timeout for all acquire fence
+ Sunil Khatri - msm: kgsl: Fix premature return from power initialization
+ Vignesh Radhakrishnan - kmemleak : Make module scanning optional using config
+ Vignesh Radhakrishnan - kmemleak : Make kmemleak_stack_scan optional using config
+ Daqing Chen - input: sensors: add sensors max delay time
+ Ravinder Konka - netfilter: Changes to handle MT call issue in SIP ALG
+ Srinivas Rao L - Revert "ARM: dts: msm: Add new dt node for low power mode driver workarounds"
+ Venkatesh Yadav Abbarapu - clk: qcom: clock-gcc-fsm9010: Do not configure GMAC clock
+ Yeleswarapu Nagaradhesh - ASoC: wcd: enable supply after impedance detection
+ Venkatesh Yadav Abbarapu - net: qfec: Fix error in GMAC_N_CLKDIV_SHFT macro
+ Yeleswarapu Nagaradhesh - ASoC: wcd: disable micbias and cs on stop request
+ Yeleswarapu Nagaradhesh - ASoC: wcd: toggle FSM during polling
+ Yeleswarapu Nagaradhesh - ASoC: wcd: add IRQF_NO_SUSPEND flag
+ Subbaraman Narayanamurthy - power: qpnp-smbcharger: add support for configuring max current for DC path
+ Chandan Uddaraju - ARM: dts: msm: increase svs voltage when display is enabled for msm8994
+ Ping Li - msm: mdss: Fix uninitialized return value for compact ioctl function
+ Stepan Moskovchenko - power: reset: msm: Defer set_dload_mode to end of probe
+ Chandan Uddaraju - msm: mdss: add support to configure svs voltage on cx rail
+ Liam Mark - ARM: dts: msm: Support jpeg dma context bank in 8992
+ Subbaraman Narayanamurthy - ARM: dts: msm: update CCI corner mappings for msm8992
+ Sandeep Panda - msm: mdss: update partial update sequence in 8909
+ Sandeep Panda - msm: mdss: enable command mode panel support on 8909
+ Konstantin Motov - msm: camera: reduce logging in case of ISP iommu page fault
+ Alok Kediya - msm: isp: validate vfe_intf max params
+ Sunil Khatri - msm: kgsl: Wake up snoozing threads on marker expiry
+ Rajkumar Raghupathy - ARM: dts: msm: Add support for modem PIL for msmtellurium
+ Rama Krishna Phani A - hwmon: qpnp-adc: Add thermal sysfs interface to VADC
+ Anirudh Ghayal - power: smb1360: Store the initial IRQ status register value
+ Anirudh Ghayal - power: smb1360: Do not configure BAT_ID fail configuration
+ Rajakumar Govindaram - msm: camera2: cpp: Use firmware version specific offsets
+ Venu Yeshala - msm: camera: isp: Check bounds for ISP command parameters
+ Girish Mahadevan - msm: msm_bus: Aggports property not propogated to node
+ Mao Li - leds: aw2013_led: use PM suspend/resume for aw2013_led
+ Atish Kumar Patra - net: ipc_router: Fix uninitialized variable warning
+ Xiaozhe Shi - ARM: dts: msm: add qcom,revid-tp-rev to retrim bcl current
+ Xiaozhe Shi - power: qpnp-fg: manually trim the external sense offset for bcl
+ Xiaozhe Shi - power: bcl_peripheral: program registers for inhibit derating
+ Xiaozhe Shi - ARM: dts: msm: change the bcl-mh-threshold to 405mA for PMI8994
+ Maheshwar Ajja - msm: vidc: kill unsupported sessions
+ Jack Pham - ARM: dts: msm: Delete obsolete USB properties
+ Gilad Avidov - defconfig: fsm9010: Enable POSIX_MQUEUE in kernel
+ Gilad Avidov - defconfig: fsm9010: Enable ssbi driver
+ Kuogee Hsieh - msm: mdss: enable dsi clock during HS clock lane recovery
+ Gilad Broner - Revert "block: do not requeue completed request"
+ Gilad Broner - Revert "scsi: check request was requeued before scheduling requeue work"
+ Alok Chauhan - ARM: dts: msm: Update latest limiter rules thresholds for msm8939
+ Ray Zhang - defconfig: 8916: Enable tps65132 driver
+ Nitesh Gupta - msm: mdss: change LUT position in MDP3 for SVI
+ Shilpa Mamidi - msm:pproc:Freed the vpe prameters to avoid memleak
+ Oliver Wang - input: sensors: correct ALPS sensor reporting mode flags
+ Patrick Lai - ASoC: msm: msm8994: add sample rate mixer control for SLIM0 TX back-end
+ Iliya Varadzhakov - msm: cpp: Increase the count of queued frames to HW to 2
+ Kiran Gunda - ARM: dts: msm: Configure i2c on BLSP1QUP2 for msmtellurium
+ Anirudh Ghayal - power: smb1360: Add parallel-charging support
+ Anirudh Ghayal - power: qpnp-linear-charger: Add parallel charging support
+ Xiaogang Cui - ARM: dts: msm: update jtag fuse for 8916,8936 and 8909
+ Patrick Lai - ASoC: msm: qdsp6v2: enlarge PCM platform driver capture period size
+ Patrick Lai - ASoC: msm: qdsp6v2: Update supported sample rates of SLIM TX CPU DAIs
+ Patrick Lai - ASoC: msm: update supported sample rates for MM capture CPU DAIs
+ Patrick Lai - ASoC: msm: Update format of capture CPU DAIs to support 24-bits
+ Jayant Shekhar - msm: mdss: Synchronize DSI off, BTA status and DSI event handler
+ Sarangdhar Joshi - coresight: set only required bits in the bitmap
+ Jack Pham - usb: dwc3: get rid of otg-capability
+ Skylar Chang - msm: ipa: fix the QMI msg cleanup sequence
+ Tianyi Gou - clk: qcom: 8939: Add support for oxili_timer_clk
+ Mayank Rana - USB: rmnet: Handle case when response queue is empty
+ Fred Oh - Asoc: msm: qdsp6v2: suppress q6asm callback logs
+ Saurabh Shah - mdss: mdp: Add support for 180 rotation in PAN_DISPLAY path
+ Vikram Mulukutla - ARM: dts: msm: Eliminate frequencies less than 600Mhz for the 8992 A57s
+ Venkatesh Yadav Abbarapu - msm: fsm9010: Read the fuse to update the MAC address
+ Ujwal Patel - msm: mdss: improve right blend pipe allocation during source split
+ Gjorgji Rosikopulos - msm: jpeg: fix get iommu context error handling
+ Mao Flynn - msm: mdss: add a fb type for fb mmap ioctl
+ Kamal Negi - bluetooth: Add support for Tufello 1.1
+ Ravi Kumar Siddojigari - defconfig: 8909: Disable unused configs
+ Jayant Shekhar - msm: mdss: Add extra panel info element in the fb_data_type
+ Dinesh K Garg - md: dm-req-crypt: Change HW FDE to use AES 128
+ Dinesh K Garg - md: dm-req-crypt: Reduce the max hw_sectors for dm-req-crypt queue
+ Mao Li - ARM: dts: msm8929: add touch device node
+ Ram Chandrasekar - ARM: dts: msm: Update bcl polling interval for PMI8994
+ Jeevan Shriram - ARM: dts: msm: remove incorrect configuration of boost gpio
+ Abhijeet Dharmapurikar - power: qpnp-smbcharger: fix the argument order while using is_between()
+ Steven Cahail - soc: qcom: glink: Add glink_wait_link_down() API
+ Rajeev Kulkarni - msm: kgsl: Detach page table first for every close
+ Ian Maund - Revert "msm: ion: Update the ion cache maintainance operations"
+ Fred Oh - ARM: dts: msm: add speaker driver in msm8992 cdp and mtp
+ Tony Truong - msm: pcie: add support to enable clk power management for EP
+ Tony Truong - msm: pcie: add support to enable common clk config for EP
+ Aravind Venkateswaran - msm: mdss: dsi: fix dsi init sequence with ulps during suspend feature
+ Ram Chandrasekar - ARM: dts: msm: Update BCL mitigation config for MSM8992
+ Steven Cahail - soc: qcom: glink_ssr: Export SSR functions and structures for testing
+ Aravind Venkateswaran - msm: mdss: dsi: enter ULPS after blanking the panel during suspend
+ Steven Cahail - soc: qcom: glink_ssr: Clear cb_data if channel open fails
+ Ram Chandrasekar - power: bcl_peripheral: Read Ibat max and Vbat min for interrupt clear
+ Shiju Mathew - power: bcl_peripheral: Move BCL interrupts to level based
+ Shiju Mathew - power: bcl_peripheral: Read Ibat/Vbat max/min earlier in interrupt timeline
+ Shiju Mathew - power: bcl_peripheral: Fix Ibat MAX and Vbat MIN read sequence
+ Subbaraman Narayanamurthy - ARM: dts: msm: configure MEM ACC type registers for mem_acc1 for msm8994
+ Ankit Gupta - i2c-msm-v2: support for DMA engine
+ Karthik Parsha - ARM: dts: msm: Remove A53 clock phandle and id for MSM8992
+ Karthik Parsha - ARM: dts: msm: Remove A53 clock phandle and id for MSM8994v2
+ Karthik Parsha - msm-pm: Add support to manage Apps PLL outside linux
+ Manaf Meethalavalappu Pallikunhi - ARM: dts: msm: Add SUPPLY_LM driver related details for MSM8909
+ Jeevan Shriram - msm: mdss: allow unused SMPs during pipe re-use on MDSS v1.10
+ Tony Truong - msm: pcie: calculate EP's capability register offsets
+ Manaf Meethalavalappu Pallikunhi - defconfig: msm8909: Enable SUPPLY_LM Monitor driver
+ Manaf Meethalavalappu Pallikunhi - msm: limits: Add S1 supply current limiting driver for MSM8909
+ Mayank Parashar - ARM: dts: msm: Change front camera configuration for msm8909
+ Vikram Mulukutla - clk: qcom: clock-cpu-8994: Do not modify the A53/A57 clock tree divider
+ Ravinder Konka - defconfig: msm8909: Enabling kernel configs for VPN
+ Dilip Kota - ARM: dts: msm: correct the i2c1 gpio sleep state on MSM8909
+ Keith Fallows - ARM: dts: msm: Add secure touch clocks for msm8992 synaptics
+ Oliver Wang - input: sensors: fix ap3426 factory calibration issues
+ Oliver Wang - input: sensors: optimize LTR553 factory calibration time
+ Harsh Shah - Revert "msm: camera: isp: Reset ispif hw after stop"
+ Vijayavardhan Vennapusa - ARM: dts: msm: Add USB UICC device node for msmtellurium
+ Maya Erez - ARM: dts: msm: set affinity to little cluster for 8992
+ Arun Kumar Neelakantam - ARM: dts: msm: Add smd pkt devices for msmterbium
+ Arun Kumar Neelakantam - ARM: dts: msm: Add smd tty devices for msmterbium
+ Arun Kumar Neelakantam - ARM: dts: msm: Add IPC ROUTER devices for msmterbium
+ Arun Kumar Neelakantam - ARM: dts: msm: Add SMP2P devices for msmterbium
+ Arun Kumar Neelakantam - ARM: dts: msm: Add smem entry for msmterbium
+ Arun Kumar Neelakantam - ARM: dts: msm: Add ipc-spinlock entry for msmterbium
+ Romain Izard - mmc: Allow forward compatibility for eMMC
+ Jeevan Shriram - msm: mdss: fix issue in calculating decimated dimensions
+ Vikram Mulukutla - clk: qcom: clock-cpu-8994: Sanity the clock tree on mux/divider changes
+ Xiaogang Cui - soc: qcom: jtag-fuse: add support for jtag fuse v2 layout
+ Amit Shekhar - ASoC: msm: qdsp6v2: Handles additional flac metadata
+ Vikram Mulukutla - msm: clock-generic: Add a flag to ignore odd divider values
+ Xiaozhe Shi - ARM: dts: msm: remove 3020mah and update 3000mah profile on 8994 + 8992
+ Skylar Chang - msm: ipa: fix the QMI msg for xlat feature
+ Sarangdhar Joshi - coresight: vote for core clock before accessing tpdm register
+ Tony Truong - msm: pcie: add PM support for multiple endpoints on a bridge
+ Yue Ma - cnss: Add support for PCIe multiple endpoints over a bridge feature
+ Mitchel Humpherys - msm: ADSPRPC: Invalidate buffers using physical address
+ Skylar Chang - msm: ipa: Add SPS_BAM_MGR_DEVICE_REMOTE in bam options
+ Jeevan Shriram - ARM: dts: msm: add Sharp 1080p panel support for msm8992
+ Ingrid Gallardo - ARM: dts: msm: set number of memory controller channels for 8992
+ Ingrid Gallardo - msm: mdss: avoid overlay queue for a dirty pipe
+ Rohit Gupta - soc: qcom: msm_perf: Detect & notify userspace about heavy CPU loads
+ Rohit Gupta - soc: qcom: msm_perf: Add detection for heavy IO workloads
+ Rohit Gupta - soc: qcom: msm_perf: Rename the hotplug structure as cluster
+ Mitchel Humpherys - ion: msm: fix cache maintenance on unmapped buffers
+ Talel Shenhar - mmc: block: use pr_err_ratelimited for command errors
+ Nadine Toledano - msm: ipa: improve AP suspend handling
+ Tirupathi Reddy - ARM: dts: msm: Add CPR parameters for msm8929
+ Hanumath Prasad - clk: qcom: clock-cpu-8939: Add support for new efuse
+ Ravinder Konka - msm: netfilter: changes to handle contact address modification in SIP ALG
+ Nadine Toledano - msm: ipa: fix parameter check in delete resource
+ Srivatsa Vaddagiri - sched: Remove sched_wake_to_idle for HMP scheduler
+ Srivatsa Vaddagiri - defconfig: msm8994: Enable CONFIG_CFS_BANDWIDTH feature
+ Srivatsa Vaddagiri - sched: Support CFS_BANDWIDTH feature in HMP scheduler
+ Srivatsa Vaddagiri - sched: Consolidate hmp stats into their own struct
+ Daqing Chen - ARM: dts: msm: modify bma2x2 sensor place for 8929 skul
+ Rupesh Tatiya - Bluetooth: change cancel_delayed_work to cancel_delayed_work_sync
+ Paul Moore - selinux: reduce the number of calls to synchronize_net() when flushing caches
+ Saravana Kannan - ARM: dts: msm: Fix BIMC BWMON hardware description for MSM8992
+ Subbaraman Narayanamurthy - ARM: dts: msm: add CPR support for A53 1.44GHz speed bin for msm8992
+ Pushkar Joshi - clk: qcom: clock-cpu-8994: Add A53 speedbin support for MSM8992
+ Pushkar Joshi - ARM: dts: msm: Modify length of efuse on MSM8992
+ Subbaraman Narayanamurthy - ARM: dts: msm: specify initial voltage and quotient adjustments for msm8992
+ Subbaraman Narayanamurthy - ARM: dts: msm: enable quotient interpolation for APC regulators on msm8992
+ Subbaraman Narayanamurthy - ARM: dts: msm: enable closed-loop CPR for APC regulators on msm8992
+ Subbaraman Narayanamurthy - ARM: dts: msm: add speed bin fuse data for APC CPR regulators on msm8992
+ Subbaraman Narayanamurthy - ARM: dts: msm: Increase reference voltages for APC regulators on msm8992
+ Subbaraman Narayanamurthy - ARM: dts: msm: specify floor voltages for APC regulators on msm8992
+ Skylar Chang - ARM: dts: mdm9640: Add entry of ipa-bam-remote-mode in IPA node
+ Rajesh Bondugula - msm: camera: sensor: Add support for i2c based flash
+ Steven Cahail - soc: qcom: smp2p: Add unit test for remote spinlock PID tracking
+ Ravinder Konka - netfilter: Changes to handle segmentation in SIP ALG
+ Terence Hampson - mdss: mdp: Dynamic dsi mode switch
+ Manaf Meethalavalappu Pallikunhi - msm: thermal: Add support for device manager in KTM
+ Manaf Meethalavalappu Pallikunhi - msm: thermal: Add support for sensor manager in KTM
+ Chun Zhang - ARM: dts: msm: GPIO97 control to AFE driver on MSM8939
+ Chun Zhang - input: touchscreen: bu21150: add touch-to-wake feature
+ Eric Dumazet - net: rps: fix cpu unplug
+ Patrick Daly - edac: cortex_arm64_edac: Use dbe irq only
+ Mayank Rana - dwc3: core: Initialize wait queue from dwc3_probe
+ Subash Abhinov Kasiviswanathan - ping: Fix race in free in receive path
+ Steven Cahail - hwspinlock/msm: Add PID tracking for remote spinlocks
+ Mohit Aggarwal - diag: Add support for MSM8929 QPST string
+ Srivatsa Vaddagiri - sched: Add userspace interface to set PF_WAKE_UP_IDLE
+ Zhen Kong - crypto: msm: change dev_err messages to dev_warn for reaper worker
+ Rajkumar Raghupathy - ARM: dts: msm: Add support for pronto pil
+ Mao Li - leds: aw2013_led: enable regulators to fix failure when light led
+ Daqing Chen - input: sensors: modify bma2x2 minimum delay time
+ Sujeet Kumar - USB: phy: Dont flush work from set suspend during runtime idle
+ Shuo Yan - ARM: dts: msm: Update synaptics r63417 display panel timming
+ Chintan Pandya - ARM: dts: msm: Update the SID mapping for msmterbium
+ Seung-Woo Kim - Bluetooth: Fix crash in l2cap_chan_send after l2cap_chan_del
+ Kishan Kumar - msm: 8929: Add a dedicated DT_MACHINE for msm8929
+ Siddharth Bhal - wcnss: avoid removing pm_qos request when already removed
+ Shubhraprakash Das - msm: kgsl: Prevent spin lock deadlock
+ Venkatesh Yadav Abbarapu - ARM: dts: msm: Add clock driver support for fsm9010
+ Venkatesh Yadav Abbarapu - ARM: dts: msm: Fix uart3 clock in fsm9010
+ Venkatesh Yadav Abbarapu - clk: qcom: clock-gcc-fsm9010: Initial clock driver
+ Senthil Kumar Rajagopal - msm: isp: Add Grey scale format.
+ Atish Kumar Patra - net: ipc_router: Add data_ready callback support
+ Rajesh Bondugula - msm: camera: sensor: Remove media bus inclusion
+ Girish Mahadevan - msm: msm_bus: Don't enable/disable QoS clks during IO throttling modes
+ Harout Hedeshian - net: ipv6: Add sysctl entry to disable MTU updates from RA
+ Rajesh Bondugula - msm: camera: sensor: Reduce usage of stack memory
+ Ke Liu - ARM: dts: msm: remove mem_acc regulators from APC CPR regulators on msm8992
+ Patrick Lai - ASoC: msm: msm8994: add mixer command for SLIM0 TX bit format
+ Abhimanyu Garg - defconfig: msm8994: disable serial console
+ Archana Sathyakumar - msm-core: Retrieve voltage plan for only cpus listed cpumask
+ Tanya Brokhman - fs: ubifs: Handle zero-length files issue on rename
+ Keith Fallows - defconfig: msm8916/msm8939 64 bit: Enable secure touch
+ Gilad Broner - scsi: ufs: add host state prints in failure cases
+ Gilad Broner - defconfig: msm8994: enable mpq demux
+ Vasko Kalanoski - msm: camera: Free gpio array memory on error
+ Vasko Kalanoski - msm: camera: check size of allocated buffer to prevent overflow
+ Gilad Broner - ARM: dts: msm: add tspp to msm8992
+ Shuo Yan - ARM: dts: msm: Enable synaptics r63417 display panel for MSM8929 SKULB
+ Shuo Yan - ARM: dts: msm: add r63417 fhd panel for MSM8929 QRD SKULB
+ Hemant Kumar - usb: u_bam_data: Fix race between disconnect work and bam_data_connect
+ Zhenhua Huang - ARM: dts: msm: Attach battery file with VMBMS driver for MSM8929 SKUL
+ Maria Yu - ARM: dts: Add support for msm8929 QRD SKULB
+ Maria Yu - ARM: dts: msm: Add support for msm8929 QRD SKUL
+ Gilad Broner - scsi: ufs: verify hba->vops pointer is valid
+ Nadine Toledano - msm: ipa: add IPADMA
+ Manu Gautam - usb: u_bam_data: Reset DBM only if USB request was dequeued
+ Ingrid Gallardo - ARM: dts: msm: add register ranges to xlog for msm8992
+ Ke Liu - ARM: dts: msm: reduce APC0 SVS and NOM CPR margin by 25 mV for msm8994
+ Bhalchandra Gajare - ASoC: wcd-cpe-core: Add support for SFR
+ Bhalchandra Gajare - ASoC: wcd_cpe_services: Change boot event to include SFR details
+ Eric Holmberg - soc: qcom: glink: export transport name to id function
+ Patrick Lai - mfd: wcd9xxx-slimslave: remove fixed bitwidth for Tx ports
+ Patrick Lai - ASoC: wcd9330: add 24-bit support for TX CODEC DAI
+ Patrick Lai - ASoC: msm: qdsp6v2: Update all SLIMBUS TX DAIs to 24-bit
+ Chun Zhang - ARM: dts: msm: add JDI 5.5-inch panel to MSM8939 CDP
+ Shubhraprakash Das - msm: kgsl: Try hard reset when VBIF pipe clear fails
+ Subbaraman Narayanamurthy - ARM: dts: msm: update turbo ceiling voltages for A57 cluster on msm8992
+ Lucille Sylvester - msm: kgsl: Poke the idle timer when dispatching more commands
+ Terence Hampson - mdss: mdp: Separate intfs func ptr to their own struct
+ Harout Hedeshian - net: rmnet_data: Handle VND level MAP flow control with flow ID 0xFFFFFFFF
+ Abhimanyu Garg -  defconfig: msm: Enable ZRAM support for msm8994 64 bit
+ Girish Mahadevan - devfreq: devfreq_spdm: Add IPC logging for hypervisor calls
+ Shubhraprakash Das - Arm: dts: msm: Change chipid for adreno core
+ Matt Wagantall - ARM: dts: msm: Split 8994-v2.0 and 8994-v2.1 device trees
+ Ram Chandrasekar - msm: lmh_lite: Add ftraces for LMH Lite events
+ Skylar Chang - msm: ipa: cache the QMI msgs send to Q6
+ Casey Piper - clk: qcom: mdss: update power on sequence for HDMI 20nm PHY
+ Archana Sathyakumar - ARM: dts: msm: Support ea for msm8992 target
+ Hemant Kumar - ARM: dts: msm: Add support for 5V VBUS supply for host mode
+ Rupesh Tatiya - Bluetooth: kill all the anchored URBs on USB device disconnect
+ Zhenhua Huang - power: smb1360: Fix issue for property CHARGING_ENABLED reporting
+ Xiaogang Cui - ARM: dts: msm: add cpu cti for msmtellurium
+ Chintan Pandya - defconfig: msm8909: Enable workaround for MMU500 Bug
+ Mao Li - ARM: dts: msm: change the max number of touches for MSM8909
+ AnilKumar Chimata - crypto: msm: qcrypto: Close window during suspending for SMP
+ AnilKumar Chimata - Revert "Crypto: Update reaper timeout to 10ms"
+ Daqing Chen - defconfig: enable hall sensor driver
+ Balvinder Singh - Bluetooth: Avoid Spurious AMP node access if not created
+ Xiaogang Cui - ARM: dts: msm: add qdsd pinctrl device for msmtellurium
+ Vijayavardhan Vennapusa - ARM: dts: msm: set emulation property for RUMI for msmtellurium
+ Vijayavardhan Vennapusa - usb: phy-msm: Add support for RUMI emulation
+ Stepan Moskovchenko - power: reset: msm: Allow configuring reset type via secure I/O
+ Stepan Moskovchenko - power: reset: msm: Deassert PS_HOLD via SCM if possible
+ Ashray Kulkarni - ARM: dts: msm: update venus clocks for 8992
+ Hemant Kumar - usb: bam: Remove suspend_work
+ Hemant Kumar - usb: u_bam_data: Directly call suspend/resume APIs from function suspend
+ Stepan Moskovchenko - soc: qcom: smd: Fix error message formatting
+ Junjie Wu - defconfig: msm8994: Enable core_ctl module
+ Junjie Wu - tracing: power: Add trace events for core control
+ Bryan Huntsman - qcom: core_ctl: Add support functions for core control
+ Olav Haugan - ARM: dts: msm: Enable power aware scheduling for msm8992
+ Ram Chandrasekar - power: bcl: Online a CPU only if it is offlined by BCL
+ Girish S Ghongdemath - defconfig: mdm9640: Enable Interactive governor
+ Jeff Johnson - checkpatch: add support for --noauthor
+ Ken Zhang - msm: mdss: hdmi: s3d mode support
+ Gilad Avidov - qcom-sps-dma: add support for flushing a channel
+ Ping Li - ARM: dts: msm: correct FBC parameter LOSSY_RGB_Threshold for JDI 4K panel
+ Tony Truong - msm: pcie: add PCIe PHY support for FSM9010
+ Gilad Broner - mmc: card: fix bug in mmc block test
+ AnilKumar Chimata - ARM: dts: msm: Set flag to manage clks during suspend on 8909
+ AnilKumar Chimata - defconfig: msm: Enable FDE crypto for msm8909
+ AnilKumar Chimata - ARM: dts: msm: Enable FDE flag in qseecom node
+ AnilKumar Chimata - ARM: dts: msm: Update crypto ab and ib values for 8909
+ Vijayavardhan Vennapusa - ARM: dts: msm: Add usb bam entries for msmtellurium
+ Gidon Studinski - msm: ipa: reduce active clients count on tag process timeout
+ Xiaogang Cui - ARM: dts: msm: configure gpio on cti map and unmap on 8909
+ Ashay Jaiswal - power: smb135x-charger: Request HVDCP adapter to switch to 5V at shutdown
+ Rama Krishna Phani A - defconfig: fsm9010: Enable thermal
+ Laxminath Kasam - ASoC: msm: update dev free call after io_unmap
+ Ashay Jaiswal - power: smb135x-charger: Vote for USB data-line pull-up regulator
+ Arun Kumar Neelakantam - driver: soc: bam_dmux: Fix spinlock lock-up
+ Manu Gautam - ARM: dts: msm: Add USB support for msmterbium
+ Hemant Kumar - usb: dwc3-msm: Check if pmic MISC module monitors USB ID
+ Taniya Das - ARM: dts: msm: Add cpu clock node for MSM8929
+ Oliver Wang - input: sensors: add LTR553 auto gain switch feature
+ Hemant Kumar - ARM: dts: msm: Add support for pmic_id_irq on MDM9640
+ Hemant Kumar - defconfig: mdm9640: Enable XHCI host controller driver
+ Subbaraman Narayanamurthy - power: qpnp-smbcharger: add support to read AICL current level and status
+ Ping Li - Revert "ARM: dts: msm: Set LOSSY_RGB_THD to 0 for JDI 4K panel"
+ Adrian Salido-Moreno - msm: mdss: add xlog handler to wait for kickoff timeout
+ Fred Oh - ASoC: msm: qdsp6v2: reduce debug logs
+ Steven Cahail - soc: qcom: glink_ssr: Prevent multiple restarts for same SSR notification
+ Vladimir Kondratiev - wil6210: relax spinlocks in rx reorder
+ Vladimir Kondratiev - wil6210: workaround for BACK establishment race
+ Vladimir Kondratiev - wil6210: Tx/Rx descriptors documentation
+ Vladimir Kondratiev - wil6210: fix reordering for MCAST
+ Vladimir Kondratiev - wil6210: RX high threshold interrupt configuration
+ Vladimir Kondratiev - wil6210: add advanced interrupt moderation
+ Vladimir Kondratiev - wil6210: use HW capabilities mask in reset
+ Vladimir Kondratiev - wil6210: detect HW capabilities
+ Vladimir Kondratiev - wil6210: rework debugfs for BACK
+ Vladimir Kondratiev - wil6210: fix Tx VRING for STA mode
+ Vladimir Kondratiev - wil6210: use bitmap API for "status"
+ Vladimir Kondratiev - wil6210: Increase number of associated stations
+ Vladimir Kondratiev - wil6210: consider SNAP header in MTU calculations
+ Vladimir Kondratiev - wil6210: fix max. MPDU size
+ Vladimir Kondratiev - wil6210: delba for responder
+ Vladimir Kondratiev - wil6210: control AMSDU on Tx side of Block Ack
+ Vladimir Kondratiev - wil6210: improve debugfs for VRING
+ Vladimir Kondratiev - wil6210: fix disconnect 1 STA in AP
+ Vladimir Kondratiev - wil6210: improve debugfs for reorder buffer
+ Vladimir Kondratiev - wil6210: allow to configure ADDBA request
+ Vladimir Kondratiev - wil6210: simple ADDBA on originator (Tx) side
+ Vladimir Kondratiev - wil6210: ADDBA/DELBA flows
+ Chen Gang - wil6210: use 'uint64_t' instead of 'cycles_t' to avoid warnings
+ Vladimir Kondratiev - wil6210: remove TODO wrt buffer alignment
+ Steven Cahail - soc: qcom: glink_ssr: Decrement expected response if notifications fail
+ Atish Kumar Patra - soc: qcom: qmi: Use ipc logging in qmi_interface
+ Harshal Trivedi - Revert "msm: camera: add support to update sensor output format"
+ Adrian Salido-Moreno - msm: mdss: remove downscale overflow check for recent MDP revisions
+ Subash Abhinov Kasiviswanathan - defconfig: arm64: msm8994: Remove unused data configs
+ Sarangdhar Joshi - coresight: add support for new fuse layout on thulium
+ Sarangdhar Joshi - soc: qcom: jtag-fuse: add support for new fuse layout on thulium
+ Tianyi Gou - ARM: dts: msm: Merge RPM clocks with GCC clock controller on MDM9640
+ Kurva Harish - defconfig: Enable SELinux and its dependencies
+ Alexy Joseph - ASoC: msm: qdsp6v2: fix get topology using copp idx for DTS HPX
+ Tianyi Gou - ARM: dts: msm: Remove VDD_MSS control from PIL on MDM9640
+ Rajeev Kulkarni - msm: kgsl: Protect registers which cause XPU violation
+ Tony Truong - ARM: dts: msm: correct IRQ # for MDM9640 PCIe INTb
+ Atish Kumar Patra - soc: qcom: ipc_router: Introduce an optional field for subsystem loading
+ Gilad Broner - media: mpq: sdmx: use 32 bit for physical address
+ Venkatesh Yadav Abbarapu - net: qfec: Add device tree and CSR wrapper support
+ Lukasz Rymanowski - Bluetooth: Fix ERTM L2CAP resend packet
+ ChandanaKishori Chiluveru - usb: f_mass_storage: Add timer to catch VFS read/write/sync stuck issues
+ Kishan Kumar - ARM: dts: msm: Add JDI and WCD9306 board variants for 8929
+ Mao Li - input: ft5x06_ts: correct the status of the pocket mode
+ Kishan Kumar - ARM: dts: msm: Add support for msm8929
+ Kishan Kumar - msm: socinfo: Add socinfo for msm8929
+ Shivaraj Shetty - msm: mdss: skip ESD check during continuous splash
+ Gaurav Gagrani - msm: kgsl: Remove some CP registers from snapshot dump
+ Rajeev Kulkarni - msm: kgsl: The CP_PROTECT_XX registers on A430 are not contiguous
+ Harsh Shah - msm: camera: isp: Reset ispif hw after stop
+ Krishnankutty Kolathappilly - msm: cpp: Fix mem leak when frame is dropped
+ Lucille Sylvester - msm: kgsl: State based power code interaction
+ Jeff Hugo - soc: qcom: glink_smem_native_xprt: Reset RPM indicies on init
+ Sowmya Pandiri - msm: vidc: Scale clocks on V4L2_CID_MPEG_VIDC_SET_PERF_LEVEL
+ Liam Mark - ARM: dts: msm: Have adsp heap use secure memory CMA pool for 8992
+ Oleg Perelet - msm: kgsl: Permit GPU to run max bus bandwidth at turbo power level
+ Mahesh Sivasubramanian - msm-core: Fix race with userspace updating power numbers
+ Dinesh K Garg - qseecom: wipe_key failing
+ Jeevan Shriram - msm: mdss: disable continuous splash for slave control
+ Krishnankutty Kolathappilly - msm: cpp: Fix issue in updating frame info pointer in compact ioctl
+ Sagar Gore - msm:camera: isp: Support for sw frame skip added
+ Jeff Hugo - soc: qcom: glink_smd_xprt: Make tx() atomic
+ Lynus Vaz - msm: kgsl: Use EOPNOTSUPP when content protection is not supported
+ Mayank Parashar - msm: camera: add support to update sensor output format
+ Shimrit Malichi - ARM: dts: msm: Add support for CSI1 camera sensor in LiQUID8994
+ Shiraz Hashim - mm: pagewalk: call pte_hole() for VM_PFNMAP during walk_page_range
+ AnilKumar Chimata - ARM: dts: msm: Update crypto ab and ib values for 8916/39
+ Nadine Toledano - msm: ipa: do not send zero length packet to IPA
+ Daqing Chen - ARM: dts: msm: add hall sensor node for msm8909 SKUE
+ Chintan Pandya - defconfig: msm8916: Enable workaround for MMU500 Bug
+ Chintan Pandya - iommu: msm: Workaround MMU500 active pre-fetch BUG
+ Rama Krishna Phani A - hwmon: qpnp-adc-voltage: Add temperature compensation for PM8909
+ Bingzhe Cai - input: sensors: report accurate timestamp on apds993x driver
+ Krishna Chaitanya Parimi - msm: mdss: Change histogram collect error in mdp3 to EPROTO
+ Kiran Gunda - ARM: dts: msm: Configure SPI node for tellurium
+ Patrick Daly - edac: cortex_arm64_edac: Print out L2ECTLR register
+ Mayank Rana - usb: phy: qusb: Add support to configure QUSB PHY regulator
+ Ingrid Gallardo - defconfig: msm8994: enable display driver xlog debug
+ Ingrid Gallardo - msm: mdss: debugfs: xlog: enable xlog debug by default
+ Ingrid Gallardo - msm: mdss: debugfs: xlog: display kernel panic cleanup
+ Jeevan Shriram - ARM: dts: msm: enable variable refresh rate in porch update mode
+ Subbaraman Narayanamurthy - ARM: dts: msm: specify RESET_S3 source and timer for PMi8994 and PM8004
+ Subbaraman Narayanamurthy - msm: qpnp-power-on: program S3_TIMER register only based on DT property
+ Eric Holmberg - soc: qcom: glink: make glink_tx() safe in atomic context
+ Casey Piper - mdss: mhl3: revert third-party copyright change
+ Shubhraprakash Das - iommu: msm: Do not flush tlb on detach
+ Subbaraman Narayanamurthy - ARM: dts: msm: update turbo ceiling voltages for A53 cluster on msm8992
+ Alex Sarraf - leds: wled: Remove brightness limit for 9-bit dimming
+ Siddhartha Agrawal - mdsm: mdss: Register mdp for TLB sync timeout notification
+ Neeti Desai - msm: ion: Update the ion cache maintainance operations
+ Jeff Hugo - soc: qcom: glink: Make ch_get_dummy_rx_intent() atomic
+ Mitchel Humpherys - ion: always initialize the free list parameters
+ Mayank Rana - dwc3: gadget: Clear per endpoint ring buffer when disabling endpoint
+ Gjorgji Rosikopulos - msm: face detect: use misc irq for halt and core interrupts
+ Susheel Khiani - ARM: dts: msm: Add SMR register mask bits for context banks for msmferrum
+ Venkatesh Yadav Abbarapu - mach-msm:fsm9010: Update MSM_DEBUG_UART_BASE for fsm9010
+ Venkatesh Yadav Abbarapu - ARM: dts: msm: Adjust smem base on fsm9010
+ Venkatesh Yadav Abbarapu - net: danipc: Add generic support for fsm targets
+ Laxminath Kasam - ARM: dts: msm8939: add auxpcm dt node for cpu dai
+ Taniya Das - ARM: dts: msm: Enable BIMC BW scaling support for msmtellurium
+ Taniya Das - ARM: dts: msm: Enable CPU-CCI scaling support on msmtellurium
+ Laxminath Kasam - ASoC: msm: Machine driver async ops change
+ Dhanalakshmi Siddani - ASoC: msm: qdsp6v2: post ENETRESET error during SSR
+ Rupesh Tatiya - bluetooth: return on incorrect version or firmware download failure
+ Mao Li - clk: qcom: clock-gcc-8909: replace clock lookup table with DT for MCD
+ Daqing Chen - input: sensors: add hall sensor for msm8909 SKUE
+ Bingzhe Cai - input: sensors: MPU6050 batching data is not correct
+ Preetam Singh Ranawat - Asoc: msm: qdsp6v2: Use the same topology for next stream
+ Talel Shenhar - mmc: block: fix flush timeout error handling
+ Hemant Kumar - usb: gadget: u_bam_data: get rid of bam rndis state
+ Shimrit Malichi - ARM: dts: msm: Enable blue LED on boot for LiQUID8994
+ Shimrit Malichi - Revert "ARM: dts: msm: Enable notification LED on liquid8994"
+ Jyoti Iyer - Revert "ARM: dts: msm: enable dynamic fps vfp mode for sharp wqxga panel"
+ Subbaraman Narayanamurthy - ARM: dts: msm: specify external sense property for 8992 MTP
+ Subbaraman Narayanamurthy - ARM: dts: msm: correct external sense definition for 8994 MTP and Fluid
+ Dhaval Patel - msm: mdp: add UBWC formats in MDP supported format list
+ Xu Han - msm: sensor: remove bivcm park lens function
+ Benet Clark - msm: mdss: Clear PP pipe resources before copying new userspace config
+ Atish Kumar Patra - soc: qcom: glink: Update header to clarify the proper usage
+ Benet Clark - msm: mdss: Prevent QSEED scaling on VIG pipe with RGB data
+ Abhijeet Dharmapurikar - ARM: dts: msm: Update charger node for Wipower on 8992 MTP
+ Gilad Avidov - msm: emac: remove unused phy interrupt
+ Ping Li - msm: mdss: Output backlight info to mdp stat sysfs node
+ Huaibin Yang - clk: mdss: use DSI PLL power down sequence for gdsc toggling case
+ Andrei Danaila - mhi: core: Reduce interrupt moderation to 1ms
+ Sreesudhan Ramakrish Ramkumar - msm: camera: isp: Validate input parameter for vfe_write and vfe_read
+ Andrei Danaila - mhi: core: Enable NER support
+ Ke Liu - regulator: qpnp-labibb-regulator: fix parsing of initial voltages
+ Ke Liu - regulator: qpnp-labibb-regulator: fix the delay setting for LAB/IBB
+ Gilad Avidov - msm: emac: move irqs from driver to device
+ Ankit Gupta - ARM: dts: msm: correct BAM pipe config for mdm9640
+ Rajakumar Govindaram - msm: camera2: cpp: Add support for extended stripe calculation
+ Vasko Kalanoski - msm: camera: add free allocated memory in case of error
+ Keith Fallows - defconfig: msm8916/39 64-bit: Enable t-base kernel driver
+ Jayant Shekhar - msm: mdss: Start ESD BTA status check after unblank done
+ Alok Chauhan - ARM: dts: msm: Correct TCU1 qos port for msm8909
+ Vasko Kalanoski - msm: camera: add free memory for ois_ctrl in case of error
+ Vasko Kalanoski - msm: camera: update power state of sensor when occurred shutdown
+ Jie Cheng - power: smb1351-charger: Add SMB1351 charger driver
+ Sandeep Panda - msm: mdss: add support to read force clock lane HS property
+ Bingzhe Cai - input: sensors: create dedicate workqueue for sensors
+ Mitchel Humpherys - iommu: msm_iommu_sec: use dma_free_attrs to match dma_alloc_attrs
+ Kishan Kumar - ARM: dts: msm: Add support for MSM8909 PM8916 qHD RCM variants
+ Oliver Wang - input: sensors: add ap3426 queue_work return value check
+ Oliver Wang - input: sensors: optimize ltr553 sensor power consumption
+ Casey Piper - mdss: mhl3: rename "sil,i2c_port#" DT property to "sil,i2c-port"
+ Uma Maheshwari Bhiram - binder: Quiet Binder
+ Aravind Venkateswaran - msm: mdss: fix potential crash when sending backlight DCS commands
+ Jeykumar Sankaran - msm: mdss: Add panic signal support for msm8992
+ Jeykumar Sankaran - ARM: dts: msm: disable partial update for msm8992
+ Karthik Parsha - soc: cpu_pwr_ctl: Fix enabling of l2 lpms after cpu coldboot
+ Jeff Hugo - soc: qcom: glink_smem_native_xprt: RPM fifo corrections
+ Ke Liu - ARM: dts: msm: configure MEM ACC type registers for mem_acc0 for msm8994
+ Ke Liu - regulator: mem-acc-regulator: Add support for updating mem type registers
+ Mayank Rana - dwc3_otg: Increment dwc3 PM usage count unconditionally
+ Jeff Hugo - soc: qcom: glink_smd_xprt: Make poll() atomic
+ Shiju Mathew - ARM: dts: msm: Update BCL Ibat thresholds on MSM8994
+ Junjie Wu - PM / devfreq: Fix error handling in governor_cpufreq
+ Pushkar Joshi - clk: qcom: clock-mmss-8992: Update venus clock frequencies
+ Skylar Chang - msm: ipa: introduce new QMI msg for xlat feature
+ Karthikeyan Ramasubramanian - defconfig: apq: Enable IPC Router over MHI
+ Karthikeyan Ramasubramanian - ARM: dts: apq: Add IPC Router MHI XPRT device for apq8084
+ Ken Zhang - mdm: display: qpic: continue splash screen
+ Hemant Kumar - usb: gadget: mbim: Handle SET_ALT from host properly
+ Shiju Mathew - ARM: dts: msm: Add A57 core phandles for BCL frequency mitigation
+ Keith Fallows - ARM: dts: msm: Add mcd device tree data for msm8916 and msm8939
+ Nick Schutt - Add defined(MSM8909) to device tree support.
+ Nick Schutt - Change clock tree name to qcom, mcd to avoid using the same device in the tree as another module
+ Nick Schutt - t-base-301B: add device tree support for msm8916 crypto clocks
+ Sylvain Trosset - fix corrupted smc_fastcall returned error code TBUG-464
+ Zhenhua Huang - ARM: dts: msm: Attach battery file with VMBMS driver for MSM8939 SKUL
+ Peter Liu - msm: camera: add length in buffer plane info
+ Zhenhua Huang - ARM: dts: msm: Add battery device tree data for msm8939 SKUL
+ Rajakumar Govindaram - ARM: dts: msm: Set 320MHz as minimum clock for 8994
+ Smita Ghosh - ARM: dts: msm: add sleep counter support for mdm9640
+ Shiju Mathew - power: bcl_peripheral: Configure BCL irq as non wakable
+ Shiju Mathew - power: bcl: Support selective core frequency mitigation
+ Ram Chandrasekar - power: bcl_peripheral: Update the Ibat and Vbat clear register
+ Ram Chandrasekar - power: bcl_peripheral: Disable the interrupts earlier
+ Mitchel Humpherys - iommu: msm: move msm_iommu_register_notify
+ Jeevan Shriram - ARM: dts: msm: mdss: add slave ping pong offsets
+ Fred Oh - ASoC: msm: qdsp6v2: fix callback handling of removing silence cmds
+ Ravinder Konka - net: core: To send ARP probe when neighbor state is NUD_STALE
+ Sreesudhan Ramakrish Ramkumar - msm: camera: isp: Fix composite stats irq handling
+ Jeff Hugo - soc: qcom: glink_smem_native_xprt: Use IRQF_SHARED
+ Jeff Hugo - soc: qcom: smd: Use IRQF_SHARED
+ Dinesh K Garg - dm: dm-req-crypt: Split read requests to reduce decryption latency
+ Stepan Moskovchenko - ARM: dts: msm: Add L1 / L2 cache dump nodes for 8992
+ Sreesudhan Ramakrish Ramkumar - msm: camera: isp: Fix pip camera exit issue
+ Jeykumar Sankaran - msm: mdss: Refactor ping pong split configurations
+ Girish S Ghongdemath - ARM: dts: mdm9640: Enable RPM notification
+ Mitchel Humpherys - iommu: msm: add msm_iommu_register_notify stub for CONFIG_MSM_IOMMU_V1=n
+ Ankit Gupta - i2c-msm-v2: improve error handling in i2c v2 driver
+ Ilia Lin - ARM: dts: msm: enable LCD LAB/IBB regulator for Dragonboard
+ Ravinder Konka - net: core: To send ARP probe when neighbor state is NUD_STALE
+ Shivaraj Shetty - msm: mdss: provide interface to pass BLIT fps for mdp3
+ Ray Zhang - msm: mdss: add debugfs support for LCM debug
+ Gilad Broner - scsi: ufs: use "sector_range" in "ufs_long" unit-tests
+ Taniya Das - qcom: scm: Add support for scm_call_atomic5_3()
+ Ilia Lin - ARM: dts: msm: Enable ELNA supply on DB8094
+ Nadine Toledano - msm: ipa: fix sps power management handling
+ Taniya Das - clk: qcom: 8909: Update the Fmax corner map for byte0_clk
+ Ilia Lin - ARM: dts: msm: Add Pinctrl states for MI2S on DB8094
+ Laxminath Kasam - ASoC: msm: qdsp6v2: fix invalid access to memory
+ Venkatesh Yadav Abbarapu - net: qfec: Populate qfec driver from 3.4 branch to 3.10 branch
+ Abhijeet Dharmapurikar - power: qpnp-smbcharger: support disabling battery charging
+ Abhijeet Dharmapurikar - power: power_supply: Add battery_charging_enabled property
+ Tyler Wear - defconfig: mdm9630: Add MDM ALX specific config variable
+ Meng Wang - ASoC: msm8939: changes to connect external speaker to HPH
+ Meng Wang - ARM: dts: msm: add specific sound card for MSM8939 SKUL
+ Sreesudhan Ramakrish Ramkumar - msm: camera: isp: Validate input parameters in ioctl handler
+ Sudheer Papothi - ARM: dts: msm: Change in sound card name for FLUID
+ Shubhraprakash Das - msm: kgsl: Dump snapshot on device start failure
+ Avijit Kanti Das - defconfig: Enable SELinux and its dependencies
+ Rohit Gupta - soc: qcom: msm_perf: Fix a race condition in hotplug callback
+ Andrei Danaila - mhi: core: Fix double increment on event counter
+ Jeff Hugo - soc: qcom: glink_smd_xprt: Move to arch_initcall()
+ Jeff Hugo - soc: qcom: glink_smem_native_xprt: Move to arch_initcall()
+ Steven Cahail - soc: qcom: glink_ssr: Remove print_subsystem_list() from init()
+ Jeff Hugo - soc: qcom: glink: Move to arch_initcall()
+ Vikram Mulukutla - ARM: dts: msm: Add new A57 to CCI frequency mapping for MSM8992
+ Steven Cahail - soc: qcom: glink_ssr: Handle callbacks in workqueues
+ Devdutt Patnaik - usb: gadget: ecm: Improve handling of SET_ALT received from host
+ Naveen Kaje - msm_serial_hs: avoid enabling disabling tx and rx in set_termios
+ Gilad Avidov - msm: emac: move gpios from driver to device
+ Praneeth Paladugu - msm: vidc: Handle power collapse cancel properly
+ Praneeth Paladugu - msm: vidc: Update the clock state variable before unprepare clocks
+ nakagawa - input: touchscreen: bu21150: add new ioctl commands
+ Ankit Gupta - i2c-msm-v2: correct throughput calculation in i2c driver
+ Ujwal Patel - iommu: msm: fix vbif base address during tlb sync operation
+ Lee Susman - block: test-iosched: expose sector_range variable to user
+ Tirupathi Reddy - regulator: cpr-regulator: Add minimum difference allowed for quotients
+ Laxminath Kasam - ASoC: msm8x16-wcd: fix record KPI by moving cap settings call
+ Oliver Wang - ARM: dts: msm: calibrate LTR553 proximity sensor for SKUE
+ Vijayavardhan Vennapusa - ARM: dts: msm: Add regulator & clock entries for USB node for msmtellurium
+ Kishan Kumar - defconfig: msm8909: Add support for CTS: SECCOMP test
+ Shuo Yan - ARM: dts: msm: Enable synaptics r61318 display panel for MSM8939 SKUL
+ Oliver Wang - input: sensors: add self test support for akm09911
+ Chet Lanctot - Revert "cfg80211: Changes to support key managment offload"
+ Chet Lanctot - Revert "nl80211: fixes for event reordering."
+ Chet Lanctot - Revert "cfg80211: Key management offload support for SHA-256 and FT/8021.X"
+ Chet Lanctot - Revert "cfg80211: Key management offload support for 802.1X LEAP"
+ Chet Lanctot - Revert "cfg80211: Pass PTK as part of key management offload completion"
+ Subbaraman Narayanamurthy - power: qpnp-fg: do not mask auto recharge bit
+ Mao Li - ARM: dts: msm: Add AW2013 RGB LED device node for MSM8909
+ Mao Li - defconfig: msm8909: enable LED AW2013
+ Ram Chandrasekar - power: bcl_peripheral: Fix the Ibat to ADC value calculation
+ Gilad Avidov - msm: emac: move clocks from driver to device
+ Subbaraman Narayanamurthy - power: qpnp-smbcharger: support enable/disable jeita temperature hard limit
+ Subbaraman Narayanamurthy - power: qpnp-smbcharger: support enable/disable safety timers
+ Subbaraman Narayanamurthy - power_supply: add property POWER_SUPPLY_PROP_SAFETY_TIMER_ENABLE
+ Subbaraman Narayanamurthy - power: qpnp-smbcharger: add support for HVDCP detection
+ Azhar Shaikh - usb: dwc3-msm: Add support for HVDCP
+ Banajit Goswami - ASoC: msm: qdsp6v2: add support for any number of ASM buffers
+ Gilad Avidov - msm: emac: remove adapter pointer off hw struct
+ Steven Cahail - soc: qcom: glink_ssr: Register link state callbacks after adding to list
+ Ramakant Singh - msm: mdss: Fix systrace issue in ppp
+ Shivaraj Shetty - msm: mdss: reduce the bandwidth request calls by mdp3
+ Ramakant Singh - mdss: mdp3: add systrace begin/end trace events
+ Sivan Reinstein - msm: ipa: set IPA_ENDP_STATUS to 0 for IPA BAM2BAM pipes
+ Sylvain Trosset - Update platform file to support 8916 LA 2.0
+ Kuogee Hsieh - msm: mdss: check lab/ibb regulator before enable
+ Gilad Broner - block: test-iosched: fix bio allocation for test requests
+ Gilad Broner - block: test-iosched: enable running of simultaneous tests
+ Mao Li - leds: aw2013_led: add aw2013 led driver
+ Oana Medvesan - t-base-301B: fix bug TD-471 on generating a better buffer handle for mmap error on Android L
+ Sylvain Trosset - fix memory corruption in map_buffer TBUG-411 TQC-24
+ Sylvain Trosset - Change license to GPLv2
+ Sylvain Trosset - t-base-301B-V001: fix driver for new platform 8994
+ Oana Medvesan - t-base-301B-V001: First Release of t-base-301B Kernel Module and Kernel API. Compatible Android L.
+ Oana Medvesan - t-base-301: First release of t-base-301 Kernel Module and Kernel Api
+ Jerome Neanne - Updates for release package t-base300-8x26-V001
+ Sivan Reinstein - msm: ipa: set SSR TAG process timeout to 150msec
+ Zhenhua Huang - power: smb135x-charger: Fix minor issue for float voltage setting
+ Shimrit Malichi - msm: mdss: Add support for boot LED indication
+ Anand N Sunkad - wcnss: add proper macro value check to avoid unnecessary delay
+ Ivan Tiyanov - ARM: dts: msm: Add EEPROM support for MSM8994 CDP
+ Zhenhua Huang - ARM: dts: msm: Update fast charge current for MSM8939 SKUL
+ Patrick Lai - mfd: wcd9xxx-core: add debugfs entry to dump slimslave registers
+ Gilad Broner - scsi: ufs-test: disable write descriptor query test
+ Lynus Vaz - msm: kgsl: Correctly change the pagefault policy via sysfs
+ Lynus Vaz - msm: kgsl: Read the memory max stats properly
+ Aravind Venkateswaran - ARM: dts: msm: enable continuous splash screen for msm8992 boards
+ Jeevan Shriram - ARM: dts: msm: reserve cont-splash buffer memory for msm8992
+ Jeevan Shriram - msm: mdss: add handoff support for multiple pipes on same mixer stage
+ Girish Mahadevan - Revert "ARM: dts: msm: Remove static limiting of CPU for msm8994"
+ Ajay Singh Parmar - msm: mdss: hdmi: give multiple resolution info using sysfs node
+ Jeevan Shriram - ARM: dts: msm: Add PWM backlight support for msm8992
+ Sudheer Papothi - ASoC: msm: qdsp6v2: Proper check for memcpy
+ Amit Shekhar - ASoC: msm: qdsp6v2: Fix asm bitwidth for next track in gapless mode
+ Atish Kumar Patra - soc: qcom: glink: Update to avoid invalid pointer access
+ Skylar Chang - msm: ipa: send NOP write register command before NAT_INIT imm cm0064
+ Shiju Mathew - power: bcl: Add info logs for BCL mode and hotplug updates
+ Casey Piper - msm: mdss: support probe defer in writeback driver
+ Gilad Avidov - msm: emac: simplify log macros
+ Petar Sivenov - msm: camera: isp: protect burst streams from invalid write
+ Subbaraman Narayanamurthy - regulator: qpnp-labibb-regulator: fix enable/disable of labibb regulator
+ AnilKumar Chimata - crypto: msm: qcrypto: Update suspend resume code
+ Anand N Sunkad - wcnss: get MUX control before dumping IRIS register
+ Keith Fallows - Revert "Updates for release package t-base300-8x26-V001"
+ Keith Fallows - Revert "t-base-301: First release of t-base-301 Kernel Module and Kernel Api"
+ Keith Fallows - Revert "t-base-301B-V001: First Release of t-base-301B Kernel Module and Kernel API. Compatible Android L."
+ Keith Fallows - Revert "t-base-301B-V001: fix driver for new platform 8994"
+ Keith Fallows - Revert "Change license to GPLv2"
+ Keith Fallows - Revert "fix memory corruption in map_buffer TBUG-411 TQC-24"
+ Keith Fallows - Revert "t-base-301B: fix bug TD-471 on generating a better buffer handle for mmap error on Android L"
+ Keith Fallows - Revert "Update platform file to support 8916 LA 2.0"
+ Keith Fallows - Revert "fix corrupted smc_fastcall returned error code TBUG-464"
+ Sandeep Panda - ARM: dts: msm: update 8909 dsi regulator settings
+ Gjorgji Rosikopulos - msm: jpeg: fix core reset on invalid state
+ Ashay Jaiswal - ARM: dts: msm: Add support for PM8916 on MSM8909 RCM
+ Ramakant Singh - msm: mdss: Acquire mutex only when needed in overlay_set in mdp3
+ Jayant Shekhar - msm: mdss: Use heap instead of stack for panel_info in check var
+ Ray Zhang - msm: mdss: add sysfs node for panel status
+ Shreyas Nagasandra Chandrasekhar - ASoC: Change to correctly set the BTSCO Sample Rate
+ Jayant Shekhar - ARM: dts: msm: add hx8394d panel to 8939 platform
+ Sandeep Panda - ARM: dts: msm: command mode panel simulation support on 8909
+ Walter Yang - ARM: dts: msm: use micbias internal3 for sub mic in MSM8909 skuc
+ Walter Yang - ARM: dts: msm: add specific sound card for MSM8909 QRD SKUE
+ Ajay Singh Parmar - msm: mdss: hdmi: proper synchronization between hpd and tx power
+ Tyler Wear - defconfig: mdm9640: Add MDM ALX specific config variable.
+ Subbaraman Narayanamurthy - ARM: dts: msm: change ibb/lab soft start and power up/down delay
+ Subbaraman Narayanamurthy - power: power_supply: add HVDCP power supply type
+ Ke Liu - regulator: cpr-regulator: add debugfs support for cpr voltage limits
+ Ke Liu - ARM: dts: msm: update APC0 and APC1 CPR floor voltages for msm8994
+ Jeff Johnson - nl80211: Fix backport of struct wiphy_vendor_command
+ Casey Piper - ARM: dts: msm: disable HDMI core on MSM8994 FLUID
+ Skylar Chang - Revert "msm: ipa: change the QMI IP_TYPE_ENUM"
+ Simmi Pateriya - ASoC: wcd9xxx: Add wcd codec interrupt ack
+ Harshal Trivedi - Revert "msm: ipa: add offline charging support"
+ Andrei Danaila - mhi: core: Enable additional MHI logging
+ Praneeth Paladugu - msm: vidc: Halt the AXI after SYS error from Venus
+ Praneeth Paladugu - msm: vidc: Check clocks state before Venus AXI halt
+ Amit Shekhar - ASoC: msm: qdsp6v2: Handle adverse param value from user space
+ Siddhartha Agrawal - msm: mdss: Fix tearing and hang issues for autorefresh
+ Junjie Wu - cpufreq: interactive: Fix compiler warning for hvt
+ Joonwoo Park - sched: add sched feature FORCE_CPU_THROTTLING_IMMINENT
+ Joonwoo Park - sched: continue to search less power efficient cpu for load balancer
+ Andrei Danaila - mhi: rmnet: Resolve race condition during SSR
+ Jeff Hugo - soc: qcom: glink_smd_xprt: Ensure faked open ack occurs in legacy cases
+ Fred Oh - misc: qcom: qdsp6v2: fix maximum value of aac minimun bitrate
+ Jeff Hugo - soc: qcom: glink: Ensure open acks are processed before migration
+ Prakash Gupta - input: sensors: set flags for apds9930
+ Mahesh Sivasubramanian - soc: cpu_pwr_ctl: Prevent l2 lpms during cpu coldboot
+ Shuo Yan - ARM: dts: msm: add r61318 hd panel for MSM8939 skul
+ Ashay Jaiswal - regulator: core: fix race condition in regulator_put()
+ Fenglin Wu - power: qpnp-bms: Disable IRQ wake-up when disabling the IRQ
+ Ghanim Fodi - msm: ecm_ipa: Fix dereferencing a pointer before a NULL check
+ Sandya Chikka - ARM: dts: msm: correct the i2c1 gpio sleep state on MSM8909
+ Fenglin Wu - power: qpnp-charger: Disable IRQ wake-up when disabling the IRQ
+ Murali Nalajala - cpu_pm: Add level to the cluster pm notification
+ Jayant Shekhar - msm: mdss: Synchronize control stop and ESD check
+ Mohit Aggarwal - ARM: dts: msm: Add RTC device for msmtellurium
+ Aravind Kumar - ASoC: msm8x16-wcd: remove pdm and mclk disable for tx path
+ Sreesudhan Ramakrish Ramkumar - msm: camera: ispif: Validate vfe_intf parameter
+ Hemant Kumar - usb: msm: bam: Handle multiple bam pipe suspend/resume properly
+ Hemant Kumar - usb: gadget: Fix BUG: scheduling while atomic
+ Abhijeet Dharmapurikar - irqchip: gic: skip cluster power collapse activities
+ Ashray Kulkarni - msm: vidc: change timestamp variable from 32 bit to 64 bit
+ Ravi Gummadidala - msm: ipa: lock BH during WWAN0_PROD resource release
+ Eric Holmberg - soc: qcom: glink_smd_xprt: add pkt_size debug logging
+ Eric Holmberg - soc: qcom: glink_smd_xprt: move SMD close to close ACK
+ Eric Holmberg - soc: qcom: glink_smd_xprt: add channel lookup failure handling
+ Eric Holmberg - soc: qcom: glink_smd_xprt: add SMD channel open error handling
+ Eric Holmberg - soc: qcom: glink_smd_xprt: replace magic numbers with constants
+ Eric Holmberg - soc: qcom: glink_smd_xprt: rename data and control references
+ Eric Holmberg - soc: qcom: glink_smd_xprt: add IPC logging support
+ Eric Holmberg - soc: qcom: glink: add include dependency
+ Vikram Mulukutla - clk: qcom: clock-alpha-pll: Fix votable PLL handoff
+ Jigarkumar Kishorkumar Zala - leds: leds-qpnp-flash: add current derate control and expose max current
+ Ram Chandrasekar - Revert "thermal-core: Add a lock to tz_notify_trip()"
+ Olav Haugan - ARM: dts: msm8992: Enable HMP scheduler
+ Phani Kumar Uppalapati - ASoC: wcd9330: Wait for enough time for HPH PA to settle
+ Hemant Kumar - usb: dwc3: Clear DELAYP1TRANS bit in DWC3_GUSB3PIPECTL(0) reg
+ Girish Mahadevan - ARM: dts: msm: Enable SPDM port monitoring for CPU on msm8992
+ Fred Oh - ARM: dts: msm: add avtimer info for msm8992
+ Yeleswarapu Nagaradhesh - ASoC: msm8x16-wcd: disable ANC and MAD calibration
+ Archana Sathyakumar - msm-core: Fix NULL pointer issue while repopulating stats
+ Gilad Avidov - spmi-pmic-arb: correct max interrupt default
+ Eric Holmberg - soc: qcom: glink: log failure if intent cannot be reused
+ Eric Holmberg - soc: qcom: glink: update channel logging
+ Rajkumar Raghupathy - ARM: dts: msm: Add support for venus pil
+ Taniya Das - clk: qcom: clock-gcc-8909: Move from SVS_SOC to SVS_KRAIT
+ Padmanabhan Komanduru - msm: mdss: avoid MDP line count check when target is in suspend
+ Sujeet Kumar - USB: android: Modify common variable name no_data_bam_ports
+ Srinu Gorle - ARM: dts: msm: Add control for 8916 to vote minimum bus bandwidth
+ Alok Chauhan - ARM: dts: msm: Correct pmic arb channel dt property name for msmtellurium
+ Vasko Kalanoski - msm: camera: add pointer check to prevent of kernel crash
+ Venkat Devarasetty - msm: hotplug: Do not skip the platform init for boot core
+ Peter Liu - msm: camera: add support for ISP testgen config
+ Sujeet Kumar - Revert "usb: gadget: u_ether: Fix Out-of-order packets in UL bi-dir in RNDIS mode"
+ Rama Krishna Phani A - ARM: dts: msm: Add SPS node for msmterbium
+ Tirupathi Reddy - ARM: dts: msm: Update CPR device node for msm8909-PM8916
+ Hareesh Gundu - msm: kgsl: Skip soft reset for A304
+ Mitchel Humpherys - iommu: msm: add notifier chain for IOMMU events
+ Linus Walleij - pinctrl: fix a memleak when freeing maps
+ Deepak Katragadda - qcom: ssr: Add the subsystem_get_with_fw() API
+ Azhar Shaikh - usb: dwc3: Update the wait times in dwc3_core_and_phy_soft_reset()
+ Danny Segal - usb: hsic: Add support for seperate Async IRQ for LPM functionality
+ Viswanadha Raju Thotakura - msm: camera: Make sure the init happens before any flash operation
+ Sarangdhar Joshi - ARM: dts: msm: enable scatter gather etr-ddr mode on 9640
+ Sarangdhar Joshi - ARM: dts: msm: use correct regulator values for tpiu trace
+ Girish S Ghongdemath - ARM: dts: mdm9640: Update gic and gpio map
+ Girish S Ghongdemath - ARM: dts: mdm9640: Add wfi node to lpm_levels
+ Girish S Ghongdemath - ARM: dts: mdm9640: Update latest spm sequence for lpm mode
+ Girish S Ghongdemath - ARM: dts: mdm9640: Add clock nodes for apss and bimc axi
+ Girish S Ghongdemath - msm: clock-pm: Introduce clock-pm specific driver
+ Girish S Ghongdemath - Revert "ARM: dts: msm: Add rpm notification bit support for msmzirc"
+ Ankit Gupta - i2c-msm-v2: remove version dependent code from i2c driver
+ Huaibin Yang - ARM: dts: msm: enable dynamic fps vfp mode for sharp wqxga panel
+ Nagesh Subba Reddy - msm: camera: isp: Fix camif raw only snapshot usecase
+ Aravind Venkateswaran - msm: mdss: fix issues with transition from LP3 to LP2
+ Alexy Joseph - ASoC: msm: qdsp6v2: Mask un-necessary DTS gain related error log
+ Alex Sarraf - vibrator: qpnp-haptic: cleanup string for change in play_mode
+ Gilad Broner - scsi: check request was requeued before scheduling requeue work
+ Banajit Goswami - ASoC: msm: use separate variable for Tx bit rate
+ Ajay Singh Parmar - msm: mdss: hdmi: add new resolutions at runtime
+ Lynus Vaz - msm: kgsl: Use a pre-initialization device state
+ Rama Krishna Phani A - ARM: dts: msm: Add VADC nodes for pmtellurium and pmitellurium
+ Shiju Mathew - thermal-core: Add separate threads for sysfs notify
+ Ashay Jaiswal - ARM: dts: msm: Add a DTS file for SMB1360 with PM8916 for 8909 MTP
+ Tianyi Gou - ARM: dts: msm: Add 19.2MHz support for usb mock utmi clock for MDM 9640
+ Ingrid Gallardo - msm: mdss: debugfs: add support to serialize wait4pingpong
+ Ingrid Gallardo - msm: mdss: debugfs: xlog: add support to dump from a work item
+ Ingrid Gallardo - ARM: dts: msm: add register ranges to xlog for msm8994
+ Ingrid Gallardo - msm: mdss: debugfs: xlog: add support to dump registers by ranges
+ Huaibin Yang - msm: mdss: debugfs: xlog: move reg dump function to xlog
+ Huaibin Yang - msm: mdss: debugfs: xlog: fix block names for reg dump
+ Huaibin Yang - msm: mdss: debugfs: xlog: add debug xlog
+ Huaibin Yang - msm: mdss: debugfs: xlog: add iommu xlog
+ Huaibin Yang - msm: mdss: debugfs: xlog: fix xlog early crash
+ Huaibin Yang - msm: mdss: debugfs: xlog: refactor xlog dump
+ Tianyi Gou - ARM: dts: msm: Export axi sleep clocks for MDM9640
+ Ankit Gupta - i2c-msm-v2: correct pm state in system suspend
+ Ankit Gupta - i2c-msm-v2: remove stop tag after every read
+ Syed Rameez Mustafa - sched: Update cur_freq for offline CPUs in notifier callback
+ Vasko Kalanoski - ARM: dts: msm: Add camera sensor device for msm8992 CDP and MTP
+ Alok Chauhan - spmi-pmic-arb: Fix spmi channel number dt naming convention
+ Tanya Brokhman - Revert "mtd: ubi: Read disturb infrastructure"
+ Tanya Brokhman - Revert "mtd: ubi: Fill read disturb statistics"
+ Tanya Brokhman - Revert "mtd: ubi: Read threshold verification"
+ Naveen Kaje - msm_serial_hs: manage PM state when callbacks are disabled
+ Dov Levenglick - scsi: ufs-qcom: expose debug registers by debugfs
+ Dov Levenglick - scsi: ufs-qcom: add debug prints for test bus
+ Dov Levenglick - scsi: ufs-qcom: add ICE debug prints
+ Dov Levenglick - scsi: ufs-qcom: add print suppressing debugfs mechanism
+ Anirudh Ghayal - power: vm-bms: Clamp SOC at v-cutoff during discharge
+ Taniya Das - soc: pil-msa: Add module parameter to force crash system
+ Chintan Pandya - defconfig: 8909: Enable memory cgroups for msm8909
+ Oliver Wang - input: sensors: disable light sensor after suspend
+ Shiju Mathew - msm: thermal: Add RT priority to kernel hotplug thread
+ Chunmei Cai - ARM: dts: msm: Enable linear charger and VMBMS for msm8909 SKUE
+ Talel Shenhar - mmc: core: enable BKOPS by read-modify-write instead of override
+ Tanya Brokhman - Revert "mtd: ubi: Add kconfig to handle RD at attach"
+ Gilad Broner - block: do not requeue completed request
+ Eric Holmberg - soc: qcom: glink: fix channel context ref count updates
+ Viswanadha Raju Thotakura - msm: camera: add support for bidirectional vcm actuator
+ Shiju Mathew - power: bcl: Add battery SOC into the BCL mitigation condition
+ Arun KS - clk: qcom: clock-gcc-tellurium: Add reset clock register for usb_fs
+ Chintan Pandya - ARM: dts: msm: Update SID mapping to save SMR space
+
