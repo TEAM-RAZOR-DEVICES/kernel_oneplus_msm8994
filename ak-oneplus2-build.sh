@@ -19,7 +19,7 @@ ANYKERNEL_DIR="$RESOURCE_DIR/AK-OnePlusTwo-AnyKernel2"
 
 # Kernel Details
 BASE_AK_VER="AK"
-VER=".004.OP2.CAF"
+VER=".005.OP2.CAF"
 AK_VER="$BASE_AK_VER$VER"
 
 # Vars
