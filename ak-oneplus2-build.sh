@@ -39,8 +39,10 @@ ZIMAGE_DIR="$KERNEL_DIR/arch/arm64/boot"
 
 # Functions
 function clean_all {
-		ccache -c -C
-		rm -rf $MODULES_DIR/*.ko
+		echo; ccache -c -C echo;
+		if [ -f $MODULES_DIR/*.ko ]; then
+			rm `echo $MODULES_DIR"/*.ko"`
+		fi
 		cd $REPACK_DIR
 		rm -rf $KERNEL
 		rm -rf $DTBIMAGE
@@ -59,7 +61,10 @@ function make_kernel {
 }
 
 function make_modules {
-		rm `echo $MODULES_DIR"/*"`
+		if [ -f $MODULES_DIR/*.ko ]; then
+			rm `echo $MODULES_DIR"/*.ko"`
+		fi
+		find $MODULES_DIR/proprietary -name '*.ko' -exec cp -v {} $MODULES_DIR \;
 		find $KERNEL_DIR -name '*.ko' -exec cp -v {} $MODULES_DIR \;
 }
 
@@ -69,7 +74,7 @@ function make_dtb {
 
 function make_zip {
 		cd $REPACK_DIR
-		zip -r9 `echo $AK_VER`.zip *
+		zip -x@zipexclude -r9 `echo $AK_VER`.zip *
 		mv  `echo $AK_VER`.zip $ZIP_MOVE
 		cd $KERNEL_DIR
 }
