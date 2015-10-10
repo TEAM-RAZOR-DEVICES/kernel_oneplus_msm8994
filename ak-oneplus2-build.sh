@@ -40,7 +40,7 @@ ZIMAGE_DIR="$KERNEL_DIR/arch/arm64/boot"
 # Functions
 function clean_all {
 		echo; ccache -c -C echo;
-		if [ -f $MODULES_DIR/*.ko ]; then
+		if [ -f "$MODULES_DIR/*.ko" ]; then
 			rm `echo $MODULES_DIR"/*.ko"`
 		fi
 		cd $REPACK_DIR
@@ -61,7 +61,7 @@ function make_kernel {
 }
 
 function make_modules {
-		if [ -f $MODULES_DIR/*.ko ]; then
+		if [ -f "$MODULES_DIR/*.ko" ]; then
 			rm `echo $MODULES_DIR"/*.ko"`
 		fi
 		find $MODULES_DIR/proprietary -name '*.ko' -exec cp -v {} $MODULES_DIR \;
