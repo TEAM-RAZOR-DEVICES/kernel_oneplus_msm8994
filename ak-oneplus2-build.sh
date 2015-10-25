@@ -16,6 +16,7 @@ DEFCONFIG="ak_OnePlus2_defconfig"
 KERNEL_DIR=`pwd`
 RESOURCE_DIR="$KERNEL_DIR/.."
 ANYKERNEL_DIR="$RESOURCE_DIR/AK-OnePlusTwo-AnyKernel2"
+TOOLCHAIN_DIR="/media/ak/ak-android/kernel"
 
 # Kernel Details
 BASE_AK_VER="AK"
@@ -24,7 +25,7 @@ AK_VER="$BASE_AK_VER$VER"
 
 # Vars
 export LOCALVERSION=~`echo $AK_VER`
-export CROSS_COMPILE="$RESOURCE_DIR/AK-uber64-4.9/bin/aarch64-linux-android-"
+export CROSS_COMPILE="$TOOLCHAIN_DIR/AK-uber64-4.9/bin/aarch64-linux-android-"
 export ARCH=arm64
 export SUBARCH=arm64
 export KBUILD_BUILD_USER=ak
