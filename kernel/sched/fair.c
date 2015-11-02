@@ -1742,7 +1742,7 @@ static int task_load_will_fit(struct task_struct *p, u64 task_load, int cpu)
 		if (ta_enabled && cpu != prev_cpu
 		&& prev_rq->max_possible_capacity > rq->max_possible_capacity) {
 			thermal_mitigation = 1;
-			upmigrate = sched_downmigrate;
+			upmigrate = sched_upmigrate;
 		} else
 #endif
 			upmigrate = sched_upmigrate;
@@ -1991,7 +1991,10 @@ static int skip_freq_domain(struct rq *task_rq, struct rq *rq, int reason)
 		break;
 
 	case EA_MIGRATION:
-		skip = rq->capacity != task_rq->capacity;
+#ifdef VENDOR_EDIT
+		if (!sysctl_thermal_aware_scheduling)
+#endif
+		    skip = rq->capacity != task_rq->capacity;
 		break;
 
 	case IRQLOAD_MIGRATION:
