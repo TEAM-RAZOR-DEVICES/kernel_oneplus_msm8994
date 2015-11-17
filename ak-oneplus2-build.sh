@@ -20,7 +20,7 @@ TOOLCHAIN_DIR="/media/ak/ak-android/kernel"
 
 # Kernel Details
 BASE_AK_VER="AK"
-VER=".022.OP2.CM"
+VER=".023.OP2.CM"
 AK_VER="$BASE_AK_VER$VER"
 
 # Vars
