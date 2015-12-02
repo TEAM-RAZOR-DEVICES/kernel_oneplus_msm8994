@@ -12,7 +12,7 @@ clear
 THREAD="-j$(grep -c ^processor /proc/cpuinfo)"
 KERNEL="Image"
 DTBIMAGE="dtb"
-DEFCONFIG="ak_OnePlus2_defconfig"
+DEFCONFIG="cm_oneplus2_defconfig"
 KERNEL_DIR=`pwd`
 RESOURCE_DIR="$KERNEL_DIR/.."
 ANYKERNEL_DIR="$RESOURCE_DIR/AK-OnePlusTwo-AnyKernel2"
